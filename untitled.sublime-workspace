@@ -1,0 +1,635 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"top",
+				"topbar"
+			],
+			[
+				"single",
+				"single_loan1"
+			],
+			[
+				"sing",
+				"single_loan1"
+			],
+			[
+				"datat",
+				"datatables"
+			],
+			[
+				"data",
+				"datatable"
+			],
+			[
+				"vi",
+				"view"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"loa",
+				"loan_number"
+			],
+			[
+				"laon",
+				"loan_number1"
+			],
+			[
+				"temp",
+				"temp_loan"
+			],
+			[
+				"exp",
+				"expiry_date"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"loan",
+				"loan_number1"
+			],
+			[
+				"lao",
+				"loan1"
+			],
+			[
+				"uniq",
+				"unique"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 5411,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/site/home.blade.php",
+			"settings":
+			{
+				"buffer_size": 15194,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/g/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 7757,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "carnival_assets/css/style.css",
+			"settings":
+			{
+				"buffer_size": 29608,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "la",
+		"selected_items":
+		[
+			[
+				"la",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"vend",
+				"Laravel Artisan 5: Vendor:Publish"
+			],
+			[
+				"ve",
+				"Laravel Artisan 5: Vendor:Publish"
+			],
+			[
+				"laravel",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"make",
+				"Laravel Artisan 5: Make:Controller"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/looser/Desktop/public_html",
+		"/home/looser/Desktop/public_html/app",
+		"/home/looser/Desktop/public_html/app/controllers",
+		"/home/looser/Desktop/public_html/app/views",
+		"/home/looser/Desktop/public_html/app/views/g",
+		"/home/looser/Desktop/public_html/app/views/site",
+		"/home/looser/Desktop/public_html/app/views/site_includes",
+		"/home/looser/Desktop/public_html/bootstrap",
+		"/home/looser/Desktop/public_html/carnival_assets",
+		"/home/looser/Desktop/public_html/carnival_assets/css"
+	],
+	"file_history":
+	[
+		"/home/looser/Desktop/public_html/carnival_assets/css/gallerynavstyle.css",
+		"/home/looser/Desktop/public_html/app/views/site_includes/footer.blade.php",
+		"/home/looser/Desktop/public_html/assets/css/base.css",
+		"/home/looser/Desktop/public_html/carnival_assets/css/style.css",
+		"/home/looser/Desktop/public_html/app/views/g/index.blade.php",
+		"/home/looser/Desktop/public_html/app/controllers/GalleryController.php",
+		"/home/looser/Desktop/public_html/app/views/site/sponsor.blade.php",
+		"/home/looser/Desktop/Vegas Background SlideShow.html",
+		"/home/looser/Desktop/kakon vai/index.html",
+		"/home/looser/Desktop/kakon vai/IPVision SUST 6th CSE Carnival -2017.html",
+		"/home/looser/Desktop/public_html/app/controllers/EventController.php",
+		"/home/looser/Desktop/public_html/app/filters.php",
+		"/home/looser/Desktop/public_html/app/views/g/demo.blade.php",
+		"/home/looser/Desktop/rafik/slider.html",
+		"/opt/lampp/htdocs/cdg/index.html",
+		"/opt/lampp/htdocs/cdg/abcd.php",
+		"/home/looser/Desktop/public_html/app/routes.php",
+		"/home/looser/Desktop/public_html/app/views/site_includes/navbar.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/home.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site_includes/header.blade.php",
+		"/home/looser/Desktop/cdg/abcd.php",
+		"/home/looser/Desktop/cdg/index.html",
+		"/home/looser/Desktop/public_html/app/config/customConfig.php",
+		"/home/looser/Desktop/public_html/app/views/site_includes/topbar.blade.php",
+		"/home/looser/Desktop/public_html/.htaccess",
+		"/home/looser/Desktop/public_html/app/views/site/seminar.blade.php",
+		"/home/looser/Desktop/Farhad/index.html",
+		"/home/looser/Desktop/Farhad/owwwlab.com/toranj/demo-1/index.html",
+		"/home/looser/Desktop/public_html/js/soon/custom.js",
+		"/home/looser/Desktop/public_html/app/views/site/project_showcasing.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/gaming_contest.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/software_contest.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/programming_contest.blade.php",
+		"/home/looser/Desktop/public_html/server.php",
+		"/home/looser/Desktop/public_html/app/config/view.php",
+		"/home/looser/Desktop/public_html/bootstrap/paths.php",
+		"/home/looser/Desktop/public_html/app/views/site/programming_registration.blade.php.save",
+		"/home/looser/Desktop/public_html/index.php",
+		"/home/looser/Desktop/csecarnival/app/views/site/events.blade.php",
+		"/home/looser/Desktop/csecarnival/app/views/site_includes/navbar.blade.php",
+		"/home/looser/Desktop/csecarnival/app/controllers/ContestController.php",
+		"/home/looser/Desktop/csecarnival/app/views/site/schedule.blade.php",
+		"/home/looser/Desktop/csecarnival/app/views/site_includes/topbar.blade.php",
+		"/home/looser/Desktop/csecarnival/app/views/site_includes/footer.blade.php",
+		"/home/looser/Desktop/csecarnival/app/views/site/home.blade.php",
+		"/home/looser/Desktop/csecarnival/app/views/site/reg_end.blade.php",
+		"/home/looser/Desktop/csecarnival/app/views/site/judges.blade.php",
+		"/home/looser/Desktop/csecarnival/index.php",
+		"/home/looser/Desktop/csecarnival/app/controllers/ResultController.php",
+		"/home/looser/Desktop/csecarnival/bootstrap/paths.php",
+		"/home/looser/RafikFarhad.github.io/jekyll stop.txt",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/LendBook/lendbook.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/AddBook/addbook.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/Search/search.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/Status/status.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/RecieveBook/recievebook.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/WelcomePage/index.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/serve",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/LoanHistory/loanhistory.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/layouts/customapp.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/basic2.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/Search/temp2.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/Search/test.blade.php",
+		"/home/looser/Dropbox/farhad alif/Pustok/resources/views/layouts/app.blade.php",
+		"/home/looser/Desktop/Pustok/resources/views/home.blade.php",
+		"/home/looser/Desktop/Pustok/app/Http/Controllers/HomeController.php",
+		"/home/looser/Desktop/Pustok/resources/views/Search/search.blade.php",
+		"/home/looser/Desktop/Pustok/app/Http/Controllers/SearchController.php",
+		"/home/looser/Desktop/Pustok/composer.json",
+		"/home/looser/Desktop/Pustok/resources/views/layouts/app.blade.php",
+		"/home/looser/Desktop/Pustok/resources/views/Search/temp.blade.php",
+		"/home/looser/Desktop/Pustok/public/js/datatabletest.js",
+		"/home/looser/Desktop/Pustok/config/app.php",
+		"/home/looser/RafikFarhad.github.io/_config.yml",
+		"/home/looser/rafikfarhad.github.io/_config.yml",
+		"/home/looser/Dropbox/junk/Java/Main.java",
+		"/home/looser/Dropbox/NHSPC/Junior Final/A/output.out",
+		"/home/looser/Dropbox/NHSPC/upload/B/inp_1.in",
+		"/home/looser/Dropbox/NHSPC/upload/B/inp_2.in",
+		"/home/looser/Dropbox/NHSPC/Senior Final/F/output.out",
+		"/home/looser/Dropbox/NHSPC/Senior Final/A/output.out",
+		"/home/looser/Dropbox/NHSPC/Senior Final/A/output (BAIUST).out",
+		"/home/looser/Downloads/1 (1).txt",
+		"/home/looser/Downloads/0.txt",
+		"/home/looser/Downloads/0 (1).txt",
+		"/home/looser/Dropbox/NHSPC/upload/F/out.out",
+		"/home/looser/Downloads/0 (2).txt",
+		"/home/looser/Dropbox/NHSPC/upload/A/output_file_BAUIST.out",
+		"/home/looser/Desktop/000.txt",
+		"/home/looser/Desktop/needd",
+		"/home/looser/Downloads/0 (3).txt",
+		"/home/looser/rafikfarhad.github.io/_posts/2014-3-3-Hello-World.md",
+		"/home/looser/Downloads/1.txt",
+		"/home/looser/Desktop/Source code - Virtual Judge.html",
+		"/home/looser/Dropbox/forhad alif/tttt.php",
+		"/home/looser/Dropbox/junk/output.txt",
+		"/home/looser/Desktop/Pustok/resources/views/LendBook/lendbook.blade.php",
+		"/home/looser/Desktop/Pustok/resources/views/Status/status.blade.php",
+		"/home/looser/Desktop/Pustok/routes/web.php",
+		"/home/looser/Desktop/Pustok/app/Http/Controllers/statuscontroller.php",
+		"/media/looser/T3_SETUP/This is Read Only partition.txt",
+		"/media/looser/T3_SETUP/T3 Log In Activator for Android.txt",
+		"/home/looser/Desktop/Pustok/resources/views/WelcomePage/index.blade.php",
+		"/home/looser/Desktop/Pustok/resources/views/welcome.blade.php",
+		"/home/looser/Desktop/Pustok/resources/views/customregister.blade.php",
+		"/home/looser/Desktop/Pustok/app/Http/Controllers/customregister.php",
+		"/home/looser/Dropbox/Project_Pilot/Pilot/app/Http/Controllers/Auth/RegisterController.php",
+		"/home/looser/Desktop/Pustok/resources/views/register.blade.php",
+		"/home/looser/Dropbox/Project_Pilot/Pilot/resources/views/auth/login.blade.php",
+		"/home/looser/Desktop/Pustok/resources/views/auth/register.blade.php",
+		"/home/looser/Desktop/Pustok/public/css/ex.css",
+		"/home/looser/Desktop/Pustok/resources/views/Expired/ExpiredPage.blade.php",
+		"/home/looser/Desktop/Pustok/app/Http/Controllers/ExpiredPageController.php",
+		"/home/looser/Desktop/Pustok/resources/views/LoanHistory/loanhistory.blade.php",
+		"/home/looser/Desktop/Pustok/public/AddBook/assets/form-basic.css",
+		"/home/looser/Desktop/Pustok/public/css/app.css",
+		"/home/looser/Desktop/Metronic Admin Theme #2 _ Responsive Bootstrap Tables.html",
+		"/home/looser/Desktop/Pustok/app/Http/Controllers/ExpiredPage.php",
+		"/home/looser/Desktop/Pustok/resources/views/basic.blade.php",
+		"/home/looser/Desktop/Pustok/app/Http/Controllers/Helper.php",
+		"/home/looser/Desktop/Pustok/.gitignore",
+		"/home/looser/Dropbox/Topcoder/Arena/precode.txt",
+		"/home/looser/Dropbox/Project_Pilot/test.txt",
+		"/home/looser/Desktop/Event Time Announcer.html",
+		"/home/looser/Dropbox/Project_Pilot/abc test.txt",
+		"/home/looser/Desktop/tttt.php",
+		"/home/looser/Desktop/Pustok/database/migrations/2017_01_29_082116_loans.php",
+		"/home/looser/Desktop/Pustok/resources/views/RecieveBook/recievebook.blade.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/looser/Desktop/public_html/app",
+			"/home/looser/Desktop/Pustok/resources",
+			"/home/looser/Desktop/Pustok",
+			"/home/looser/Desktop/Pustok/vendor/laravel/framework/src/Illuminate"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"00ccff",
+			"./IPVision SUST 6th CSE Carnival -2017_files",
+			"assets/",
+			"</li>",
+			"<li>",
+			" \n",
+			"5th CSE Carnival 2015",
+			")\n",
+			"team_",
+			"team_manual",
+			"JPG",
+			"'",
+			"</b>",
+			"form",
+			"from",
+			"result.pc",
+			"team",
+			"/events",
+			"middleware",
+			"countd",
+			".jpg",
+			"semi",
+			"projectShowcasing",
+			"projectshowcasing",
+			"projectShowcasing",
+			"5th CSE Carnival 2015",
+			"IPvision SUST 5th CSE Carnival 2015",
+			"<p><i class=\"fa fa-twitter fa-fw\"></i> <a href=\"//twitter.com/{{ site.author.twitter }}\" target=\"_blank\">  @{{ site.author.twitter }} </a></p>\n                ",
+			"\">\n",
+			"'",
+			"'\n",
+			",\n",
+			"loan_number1",
+			"my",
+			"th",
+			"body",
+			"5",
+			"status",
+			"expiredpage",
+			"expired",
+			"header-",
+			"header",
+			"post",
+			"get",
+			"Happy",
+			"Auth",
+			"home",
+			"ho",
+			"home",
+			"email",
+			"logi",
+			"');\n",
+			"lara",
+			"app",
+			".css\"",
+			".js\"",
+			"img/",
+			"img",
+			"<link",
+			"link",
+			"HTML",
+			"link",
+			"images",
+			"asse",
+			"WelcomePage"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"000000",
+			"carnival_assets",
+			"carnival_assets/gallery/",
+			" ",
+			"6th CSE Carnival 2017",
+			"manual",
+			"jpg",
+			"\"",
+			"\\n",
+			"roboticscompetition",
+			"6th CSE Carnival 2017",
+			"IPvision SUST 6th CSE Carnival 2017",
+			"\"",
+			"td",
+			"POST",
+			"GET",
+			"regno",
+			"/WelcomePage"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 32.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/site/home.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								457,
+								457
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/g/index.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1519,
+								1519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 365.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "carnival_assets/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2769,
+								2769
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4086.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 42.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
