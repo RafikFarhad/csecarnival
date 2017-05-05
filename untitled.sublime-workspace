@@ -75,7 +75,7 @@
 			"file": "app/routes.php",
 			"settings":
 			{
-				"buffer_size": 5411,
+				"buffer_size": 5468,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -84,7 +84,7 @@
 			"file": "app/views/site/home.blade.php",
 			"settings":
 			{
-				"buffer_size": 15194,
+				"buffer_size": 15255,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -431,7 +431,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5411,
+						"buffer_size": 5468,
 						"regions":
 						{
 						},
@@ -460,15 +460,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15194,
+						"buffer_size": 15255,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								457,
-								457
+								0,
+								0
 							]
 						],
 						"settings":

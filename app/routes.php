@@ -31,7 +31,12 @@ Route::group(array('before' => 'auth','prefix' => 'admin'), function()
 {
 
 	Route::get('logout', ['as' => 'logout', 'uses' => 'AuthController@logout']);
-	Route::get('dashboard', array('as' => 'dashboard', 'uses' => 'AuthController@dashboard'));
+	Route::get('dashboard', array('as' => 'dashboard', 'uses' => 'DashboardController@index'));
+	Route::get('dashboard/pc', array('as' => 'dashboard/pc', 'uses' => 'DashboardController@make_pc'));
+	Route::post('dashboard/pc', array('as' => 'dashboard/pc', 'uses' => 'DashboardController@listen_pc'));
+	Route::get('dashboard/sc', array('as' => 'dashboard/sc', 'uses' => 'DashboardController@make_sc'));
+	Route::post('dashboard/sc', array('as' => 'dashboard/sc', 'uses' => 'DashboardController@listen_sc'));
+
 	Route::get('change-password', array('as' => 'password.change', 'uses' => 'AuthController@changePassword'));
 	Route::post('change-password', array('as' => 'password.doChange', 'uses' => 'AuthController@doChangePassword'));
 
@@ -56,12 +61,14 @@ Route::get('/schedule',function(){
 
 });
 
+//FARHAD
+//===================
 //EMAIL Functionality
 Route::get('/email', 'EmailController@test');
-
-
 //Gallery
 Route::get('/gallery', 'GalleryController@ab');
+
+//====================
 
 
 /**Event Module */
