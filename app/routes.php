@@ -67,6 +67,9 @@ Route::get('/schedule',function(){
 Route::get('/email', 'EmailController@test');
 //Gallery
 Route::get('/gallery', 'GalleryController@ab');
+//SmartTv
+Route::get('/flash', 'GalleryController@start');
+
 
 //====================
 

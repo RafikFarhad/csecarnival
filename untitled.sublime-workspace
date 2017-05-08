@@ -75,7 +75,7 @@
 			"file": "app/routes.php",
 			"settings":
 			{
-				"buffer_size": 5468,
+				"buffer_size": 5879,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -158,19 +158,6 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/looser/Desktop/public_html",
-		"/home/looser/Desktop/public_html/app",
-		"/home/looser/Desktop/public_html/app/controllers",
-		"/home/looser/Desktop/public_html/app/views",
-		"/home/looser/Desktop/public_html/app/views/g",
-		"/home/looser/Desktop/public_html/app/views/site",
-		"/home/looser/Desktop/public_html/app/views/site_includes",
-		"/home/looser/Desktop/public_html/bootstrap",
-		"/home/looser/Desktop/public_html/carnival_assets",
-		"/home/looser/Desktop/public_html/carnival_assets/css"
-	],
 	"file_history":
 	[
 		"/home/looser/Desktop/public_html/carnival_assets/css/gallerynavstyle.css",
@@ -431,7 +418,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5468,
+						"buffer_size": 5879,
 						"regions":
 						{
 						},
