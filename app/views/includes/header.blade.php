@@ -24,6 +24,10 @@
 
         @yield('style')
         {{ HTML::style('css/custom.css') }}
+    {{ HTML::style('carnival_assets/in/css/normalize.css') }}
+    {{-- {{ HTML::style('carnival_assets/in/css/demo.css') }} --}}
+    {{ HTML::style('carnival_assets/in/css/component.css') }}
+        <script src="//cdn.ckeditor.com/4.7.0/full/ckeditor.js"></script>
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
         <!--[if lt IE 9]>

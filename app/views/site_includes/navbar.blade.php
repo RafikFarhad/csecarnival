@@ -21,7 +21,7 @@
                 <ul class="nav navbar-nav">
                     <!-- HOME item: begin -->
                     <li><a href="{{url('/')}}">Home</a></li>
-                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="{{url('/gallery')}}">Gallery</a></li>
                     <li class="dropdown">
                         <a href="{{url('/events')}}">Events</a>
                         <ul class="dropdown-menu">
@@ -32,8 +32,12 @@
                                 <a href="{{route('event.sc')}}">Software Contest</a>
                             </li>
                             <li>
-                                <a href="{{route('event.ps')}}">Robotics Competition</a>
+                                <a href="{{route('event.ps')}}">Project Showcasing</a>
                             </li>
+                            <li>
+                                <a href="{{route('event.rc')}}">Robotics Competition</a>
+                            </li>
+
                             <li>
                                 <a href="{{route('event.gc')}}">Gaming Competition</a>
                             </li>
@@ -55,8 +59,12 @@
                                 <a href="{{route('team.sc')}}">Software Contest Teams</a>
                             </li>
                             <li>
-                                <a href="{{route('team.ps')}}">Robotics Competition Teams</a>
+                                <a href="{{route('team.ps')}}">Project Showcasing Teams</a>
                             </li>
+                            <li>
+                                <a href="{{route('team.rc')}}">Robotics Competition Teams</a>
+                            </li>
+
                             <li>
                                 <a href="{{route('team.gc')}}">Gaming Competition Participant</a>
                             </li>
@@ -89,7 +97,10 @@
                                 <a href="{{route('reg.sc')}}">Software Contest</a>
                             </li>
                             <li>
-                                <a href="{{route('reg.ps')}}">Robotics Competition</a>
+                                <a href="{{route('reg.ps')}}">Project Showcasing</a>
+                            </li>
+                            <li>
+                                <a href="{{route('reg.rc')}}">Robotics Competition</a>
                             </li>
                             <li>
                                 <a href="{{route('reg.gc')}}">Gaming Competition</a>

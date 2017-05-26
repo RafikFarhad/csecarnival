@@ -50,13 +50,13 @@
                     <div class="col-md-12 text-center">
                         <h2>Participants</h2>
                         <ol>
-                            {{-- <li>
+                            <li>
                                 Maximum <b>3</b> Members in a Group
                             </li>
                             <li>
                                 Only UNIVERSITY Students can participate
-                            </li> --}}
-                            {{-- <li>
+                            </li>
+                            <li>
                                 Registration should be done before the deadline (on spot registration is not allowed). 
                             </li>
                             <li>
@@ -66,21 +66,21 @@
                             <li>
                                 The showcasing will be held in both two days of the Carnival. So
 every team must have to be present in both 1st and 2nd day. 
-                            </li> --}}
-                            {{-- <li>The program committee reserves all the rights to accept or reject any additional teams after fulfilling the above-mentioned criterion.</li> --}}
+                            </li>
+                            <li>The program committee reserves all the rights to accept or reject any additional teams after fulfilling the above-mentioned criterion.</li>
                         </ol>
                     </div>
                 </div>
             </section>
 
-            {{-- <section class="event-section">
+            <section class="event-section">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2>Registration Fees</h2>
-                            <p>Registration Fee <b>1200.00 BDT</b> per team(3 members).</p>
+                            <p>Registration Fee <b>1500.00 BDT</b> per team(3 members).</p>
                     </div>
                 </div>
-            </section> --}}
+            </section>
 
 
             <section class="event-section">
@@ -117,7 +117,7 @@ every team must have to be present in both 1st and 2nd day.
                             <tr>
                                 <td>Wii be published soon</td>
                                 {{-- <td>27-28 November 2015</td> --}}
-                                <td>Project Showcasing</td> 
+                                <td>The Competition</td> 
                             </tr>
 
                         </table>

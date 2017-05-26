@@ -54,8 +54,22 @@ class GalleryController extends \BaseController {
         }
         return View::make('flash.index')
                 ->with('myslides',$manuals1)
-                ->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Gallery ::.');
+                ->with('title','IPvision SUST 6th CSE Carnival 2017 .::::.');
     }
+    public function start2()
+    {
+        $manuals1 = [];
+        $filesInFolder = \File::files(__DIR__.'/../../carnival_assets/gallery/flash/');
+
+        foreach($filesInFolder as $path)
+        {
+            $manuals1[] = pathinfo($path);
+        }
+        return View::make('flash2.index')
+                ->with('myslides',$manuals1)
+                ->with('title','IPvision SUST 6th CSE Carnival 2017 .::::.');
+    }
+
 
 
 }

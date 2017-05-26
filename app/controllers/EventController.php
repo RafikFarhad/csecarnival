@@ -20,8 +20,14 @@ class EventController extends \BaseController {
 	//project showcase 
 	public function ps(){
 		return View::make('site.project_showcasing')
+				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Project Showcasing');
+	}
+
+	public function rc(){
+		return View::make('site.rc')
 				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Robotics Competition');
 	}
+
 
 
 

@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 
 /*-=-=-=-==-==-=-==-==-=-==-=-=-=-=-=-    form  css  -=-=-=-==-==-=-==-==-=-==-=-=-=-=-=-*/
-
+.fix{
+	overflow:hidden;
+}
 .form-group {
     margin-bottom: 35px;
 }
@@ -57,6 +59,7 @@ input.empty, textarea.empty {
 /*=======================================  Buttons  =====================================*/
 
 .btn {
+	margin-bottom:5px;
     border-radius: 0px;
     border: 1px solid;
     padding: 10px 24px;
@@ -65,6 +68,7 @@ input.empty, textarea.empty {
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
+	min-width:60px;
 }
 
 .btn-black {
@@ -135,7 +139,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 1.82em;
-    position: relative;
     min-height: 100%;
 }
 
@@ -504,6 +507,8 @@ ul {
 
     .navbar-toggle {
         display: block;
+		
+		float:right;
     }
 
     .navbar-collapse {
@@ -620,18 +625,18 @@ ul {
 
 /*=======================================  header   ===============================================*/
 
-section.header {
+.heading-content {
     background: url(../img/seminar.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 25%;
+	height: 100%;
 }
 
 .heading-wrapper
 {
-    background-color: rgba(0,0,0,0.58);
-    height: 100%;
+
 }
 
 .page-head {
@@ -658,15 +663,21 @@ section.header {
 /*-------------------------   timer  -------------------------*/
 
 .timer {
-    margin-top: 7em;
+    padding-top: 7em;
+	background-color: rgba(0,0,0,0.58);
+    height: 100%;
+	
 }
 
 .timer h1 {
     color: #fff;
+	padding-top: 3%;
+	padding-bottom: 6%; 
+	font-size: 60px;"
 }
 
 #spacer1 {
-    padding: 70px 0px;
+    padding: 40px 0px;
 }
 
 .day, .hr, .min, .sec {
@@ -689,12 +700,15 @@ section.header {
     ==============================================================================
 */
 
-.main-content,
+.main-content{
+	min-height:500px;
+	padding: 75px 0px 150px 0px;
+}
 #service,
 #speakers,
 #events {
     width: 100%;
-    padding: 75px 0px 50px 0px;
+    padding: 75px 0px 150px 0px;
 
 }
 
@@ -713,6 +727,8 @@ section.header {
 #speakers h2 small,
 #schedule h2 small,
 #events h2 small {
+	float: left;
+    width: 100%;
     display: block;
     margin-top: 8px;
     text-align: center;
@@ -741,7 +757,6 @@ section.header {
 }
 
 .service-icon a{
-    position: relative;
     display: block;
     width: 100px;
     height: 100px;
@@ -762,13 +777,10 @@ section.header {
 }
 
 .service-icon a > i{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -22px;
-    margin-top: -22px;
+
     font-size: 45px;
-    text-align: center;
+    padding: 25px;
+	text-align: center;
     vertical-align: middle;
 }
 
@@ -1467,3 +1479,41 @@ footer a:hover {
 .contact-address .address-info .address-info-desc p {
     font-size: 14px;
 }
+/*------responsive---------*/
+@media(max-width:768px){
+	.navbar-brand {
+		height: 80px;
+		width:85%;
+		float:left;
+	}
+	.day, .hr, .min, .sec {
+    font-size: 50px;
+	}
+	.timer{
+		pading-top:4em;
+	}
+	.timer h1 {
+	font-size: 30px;
+	padding:10px 0px;
+	}
+	#spacer1 {
+    padding: 20px 0px;
+	}
+	.btn{
+		width:170px;
+	}
+	.top-info{
+		width:70%;
+		line-height:10px;
+		float:left;
+		padding:10px 0px;
+	}
+	.flat-social-icons{
+		width:30%;
+		float:right;
+	}
+
+}
+
+
+

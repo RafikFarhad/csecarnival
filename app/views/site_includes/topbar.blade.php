@@ -1,7 +1,7 @@
 <div id="top-bar">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-6 hidden-xs">
+            <div class="col-md-6 col-sm-6">
                 <div class="top-info">
                     <ul>
                         <li><i class="fa fa-map-marker"></i> Dept of CSE, SUST, Sylhet-3114</li>
@@ -13,7 +13,7 @@
             </div>
 
             <!-- topbar RIGHT Section begin -->
-            <div class="col-md-6 col-sm-6 col-xs-12 right-align">
+            <div class="col-md-6 col-sm-6 right-align">
 
                 <!-- social icon begin -->
                 <div class="flat-social-icons right">
@@ -27,19 +27,6 @@
                         <li>
                             <a target="_blank" href="https://twitter.com/csesociety" class="twitter" data-rel="tooltip" data-placement="bottom" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
                         </li>
-
-
-                        <!-- <li>
-                            <a href="" class="linkedin" data-rel="tooltip" data-placement="bottom" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                        </li>
-
-                        <li>
-                            <a href="" class="flickr" data-rel="tooltip" data-placement="bottom" data-original-title="Flickr"><i class="fa fa-flickr"></i></a>
-                        </li>
-
-                        <li>
-                            <a href="" class="pinterest" data-rel="tooltip" data-placement="bottom" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
-                        </li> -->
                     </ul>
 
                 </div>

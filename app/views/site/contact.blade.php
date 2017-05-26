@@ -86,7 +86,7 @@
                                 <div class="col-md-9 col-xs-9 address-info-desc">
                                     <h3>Md.Saiful Islam</h3>
                                     <p>
-                                        Lecturer, Dept. of CSE <br>
+                                        Assistant Professor, Dept. of CSE <br>
                                         Shahjalal University Of Science &amp; Technology
                                     </p>
                                 </div> <!-- /.address-info-desc -->
@@ -131,8 +131,8 @@
                                 <div class="col-md-9 col-xs-9 address-info-desc">
                                     <h3>Email Address</h3>
                                     <p>
-                                        contact@csecarnival.com <br>
-                                        info@csecarnival.com <br>
+                                        support@csecarnival.com <br>
+                                        {{-- info@csecarnival.com <br> --}}
                                         saiful-cse@sust.edu
                                     </p>
                                 </div> <!-- /.address-info-desc -->

@@ -89,9 +89,23 @@
                 </div>
 
                 <div class="col-md-6">
-                    <h3>Robotics Competition</h3>
+                    <h3>Project Showcasing</h3>
                     <a href="{{route('event.ps')}}" class="btn btn-black">Event Details</a>
                     <a href="{{route('reg.ps')}}" class="btn btn-black">Register Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-description">
+            <div class="row">
+                <div class="col-md-6  col-md-push-6">
+                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/rc_banner.png')}}" alt="Event Featured Image">
+                </div>
+
+                <div class="col-md-6 col-md-pull-6">
+                    <h3>Robotics Competition</h3>
+                    <a href="{{route('event.rc')}}" class="btn btn-black">Event Details</a>
+                    <a href="{{route('reg.rc')}}" class="btn btn-black">Register Now</a>
                 </div>
             </div>
         </div>
@@ -99,11 +113,11 @@
 
         <div class="event-description">
             <div class="row">
-                <div class="col-md-6 col-md-push-6">
+                <div class="col-md-6">
                     <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/gc_banner.png')}}" alt="Event Featured Image">
                 </div>
 
-                <div class="col-md-6 col-md-pull-6">
+                <div class="col-md-6 ">
                     <h3>Gaming Competition</h3>
 
                     <a href="{{route('event.gc')}}" class="btn btn-black">Event Details</a>
@@ -111,6 +125,7 @@
                 </div>
             </div>
         </div>
+
 
     </div>
 </section>

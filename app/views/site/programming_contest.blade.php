@@ -24,21 +24,10 @@
             <!-- end of /#navigation -->
     <!-- header begin -->
     <!-- header begin -->
-    <header class="page-head" style="background-image: url('{{asset('carnival_assets/img/pc_banner.png')}}');">
+    <header>
+
         <div class="header-wrapper">
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li class="active">Programming Contest</li>
-                        </ol> 
-
-                    </div>
-                </div>
-            </div> --> <!-- /.container -->
+            <img style="width: 100%;" src="{{asset('carnival_assets/img/pc_banner.png')}}">
         </div> <!-- /.header-wrapper -->
     </header> <!-- /.page-head (header end) -->
 
@@ -101,33 +90,32 @@
                             </tr>
 
                             <tr>
-                                {{-- <td>21 September 2015</td> --}}
-                                <td>Wii be published soon</td>
+                                <td>10 May 2017</td>
                                 <td>Registration Start</td> 
                             </tr>
                             
                             <tr>
-                                <td>Wii be published soon</td>
+                                <td>31 May 2017</td>
                                 {{-- <td><strike>31 October 2015</strike></br>5 November 2015</td> --}}
                                 <td>Registration Close</td> 
                             </tr>
                             <tr>
-                                <td>Wii be published soon</td>
+                                <td>04 June 2017</td>
                                 {{-- <td><strike>1 November 2015</strike></br>6 November 2015</td> --}}
                                 <td>Team Slot will be Published</td> 
                             </tr>
                             <tr>
-                                <td>Wii be published soon</td>
+                                <td>04 July 2017</td>
                                 {{-- <td><strike>5 November 2015</strike></br>15 November 2015</td> --}}
                                 <td>Payment Deadline</td> 
                             </tr>
                               <tr>
-                                <td>Wii be published soon</td>
+                                <td>04 August 2017</td>
                                 {{-- <td>27 November 2015</td> --}}
                                 <td>Mock Contest</td> 
                             </tr>
                             <tr>
-                                <td>Wii be published soon</td>
+                                <td>05 August 2017</td>
                                 {{-- <td>28 November 2015</td> --}}
                                 <td>Final Contest</td> 
                             </tr>

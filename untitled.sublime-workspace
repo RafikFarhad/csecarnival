@@ -75,8 +75,7 @@
 			"file": "app/routes.php",
 			"settings":
 			{
-				"buffer_size": 5879,
-				"encoding": "UTF-8",
+				"buffer_size": 6763,
 				"line_ending": "Unix"
 			}
 		},
@@ -84,8 +83,7 @@
 			"file": "app/views/site/home.blade.php",
 			"settings":
 			{
-				"buffer_size": 15255,
-				"encoding": "UTF-8",
+				"buffer_size": 7087,
 				"line_ending": "Unix"
 			}
 		},
@@ -94,16 +92,6 @@
 			"settings":
 			{
 				"buffer_size": 7757,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "carnival_assets/css/style.css",
-			"settings":
-			{
-				"buffer_size": 29608,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -160,10 +148,10 @@
 	},
 	"file_history":
 	[
+		"/home/looser/Desktop/public_html/carnival_assets/css/style.css",
 		"/home/looser/Desktop/public_html/carnival_assets/css/gallerynavstyle.css",
 		"/home/looser/Desktop/public_html/app/views/site_includes/footer.blade.php",
 		"/home/looser/Desktop/public_html/assets/css/base.css",
-		"/home/looser/Desktop/public_html/carnival_assets/css/style.css",
 		"/home/looser/Desktop/public_html/app/views/g/index.blade.php",
 		"/home/looser/Desktop/public_html/app/controllers/GalleryController.php",
 		"/home/looser/Desktop/public_html/app/views/site/sponsor.blade.php",
@@ -409,7 +397,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -418,7 +406,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5879,
+						"buffer_size": 6763,
 						"regions":
 						{
 						},
@@ -435,10 +423,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 32.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -447,7 +435,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15255,
+						"buffer_size": 7087,
 						"regions":
 						{
 						},
@@ -484,8 +472,8 @@
 						"selection":
 						[
 							[
-								1519,
-								1519
+								0,
+								0
 							]
 						],
 						"settings":
@@ -494,40 +482,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 365.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "carnival_assets/css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 29608,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2769,
-								2769
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4086.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
