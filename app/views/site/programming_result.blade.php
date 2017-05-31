@@ -22,26 +22,16 @@
 
     @include('site_includes.navbar')
             <!-- end of /#navigation -->
-    <!-- header begin -->
-    <!-- header begin -->
-    <!-- header begin -->
-    <header class="page-head" style="background-image: url('{{asset('carnival_assets/img/pc_banner.png')}}');">
+    <?php
+    $data = DB::table('pages')->where('slug', 'pc')->first();
+    
+    ?>
+
+    <header>
+
         <div class="header-wrapper">
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Teams</a></li>
-                            <li class="active">Programming Contest Teams</li>
-                        </ol>
-
-                    </div>
-                </div>
-            </div> --> <!-- /.container -->
+            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
         </div> <!-- /.header-wrapper -->
-    </header> <!-- /.page-head (header end) -->
 
 
     <section class="main-content">

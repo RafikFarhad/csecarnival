@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"eve",
+				"event-section"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"update",
+				"update_pages"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"te",
+				"textarea\tTag"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"pos",
+				"posts"
+			],
+			[
+				"all",
+				"text-align-last"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
 				"top",
 				"topbar"
 			],
@@ -26,10 +78,6 @@
 			[
 				"vi",
 				"view"
-			],
-			[
-				"in",
-				"input\tTag"
 			],
 			[
 				"fun",
@@ -76,22 +124,43 @@
 			"settings":
 			{
 				"buffer_size": 7738,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/site/home.blade.php",
+			"file": "app/views/site/software_contest.blade.php",
 			"settings":
 			{
-				"buffer_size": 7026,
+				"buffer_size": 1420,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/g/index.blade.php",
+			"file": "app/controllers/DashboardController.php",
 			"settings":
 			{
-				"buffer_size": 7757,
+				"buffer_size": 5219,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/includes/header.blade.php",
+			"settings":
+			{
+				"buffer_size": 1462,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/site/gaming_contest.blade.php",
+			"settings":
+			{
+				"buffer_size": 1917,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -146,15 +215,82 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/looser/Desktop/public_html",
+		"/home/looser/Desktop/public_html/app",
+		"/home/looser/Desktop/public_html/app/controllers",
+		"/home/looser/Desktop/public_html/app/views",
+		"/home/looser/Desktop/public_html/app/views/includes",
+		"/home/looser/Desktop/public_html/app/views/site",
+		"/home/looser/Desktop/public_html/app/views/site_includes",
+		"/home/looser/Desktop/public_html/carnival_assets",
+		"/home/looser/Desktop/public_html/carnival_assets/in",
+		"/home/looser/Desktop/public_html/carnival_assets/in/css"
+	],
 	"file_history":
 	[
+		"/home/looser/Desktop/public_html/app/views/site/software_contest.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/programming_contest.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/gaming_contest.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/programming_registration.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/programming_result.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/programming_team.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/project_show_registration.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/project_show_result.blade.php",
+		"/home/looser/Desktop/public_html/app/views/dashboard_pages.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/game_result.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/game_cs_team.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/software_team.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/software_result.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/software_registration.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/seminar.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/schedule.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/reg_end.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/rc.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/project_team.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/project_showcasing.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/judges.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/game_team.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/game_registration.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/game_cs_registration.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/events.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/contact.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/rc_team.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/sponsor.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site/home.blade.php",
+		"/home/looser/Desktop/public_html/app/views/includes/header.blade.php",
+		"/home/looser/Desktop/public_html/app/views/includes/footer.blade.php",
+		"/home/looser/Desktop/public_html/app/controllers/DashboardController.php",
+		"/home/looser/Desktop/public_html/app/views/includes/sideBar.blade.php",
+		"/home/looser/Desktop/public_html/app/models/Page.php",
+		"/home/looser/Desktop/public_html/app/views/site_includes/navbar.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site_includes/topbar.blade.php",
+		"/home/looser/Desktop/public_html/app/views/site_includes/header.blade.php",
+		"/home/looser/Desktop/public_html/carnival_assets/css/temp11_style.css",
 		"/home/looser/Desktop/public_html/carnival_assets/css/style.css",
+		"/opt/lampp/htdocs/ci/application/config/autoload.php",
+		"/opt/lampp/htdocs/ci/application/views/pages/home.php",
+		"/opt/lampp/htdocs/ci/application/views/pages/about.php",
+		"/opt/lampp/htdocs/ci/application/controllers/Pages.php",
+		"/opt/lampp/htdocs/ci/application/config/config.php",
+		"/opt/lampp/htdocs/ci/application/views/about.php",
+		"/opt/lampp/htdocs/ci/.htaccess",
+		"/opt/lampp/htdocs/ci/CI",
+		"/home/looser/Desktop/public_html/app/database/migrations/2017_05_25_195303_create_judge_table.php",
+		"/home/looser/Desktop/public_html/app/models/Judge.php",
+		"/home/looser/Desktop/public_html/app/models/Time.php",
+		"/home/looser/Desktop/public_html/app/views/dashboard_time.blade.php",
+		"/home/looser/Desktop/public_html/app/controllers/HomeController.php",
+		"/home/looser/Desktop/public_html/css/style.css",
+		"/home/looser/Desktop/public_html/app/database/migrations/2017_05_24_195303_create_time_table.php",
+		"/opt/lampp/htdocs/cdg/abcd.php",
+		"/opt/lampp/htdocs/cdg/index.php",
 		"/home/looser/Desktop/public_html/carnival_assets/css/gallerynavstyle.css",
 		"/home/looser/Desktop/public_html/app/views/site_includes/footer.blade.php",
 		"/home/looser/Desktop/public_html/assets/css/base.css",
 		"/home/looser/Desktop/public_html/app/views/g/index.blade.php",
 		"/home/looser/Desktop/public_html/app/controllers/GalleryController.php",
-		"/home/looser/Desktop/public_html/app/views/site/sponsor.blade.php",
 		"/home/looser/Desktop/Vegas Background SlideShow.html",
 		"/home/looser/Desktop/kakon vai/index.html",
 		"/home/looser/Desktop/kakon vai/IPVision SUST 6th CSE Carnival -2017.html",
@@ -163,24 +299,14 @@
 		"/home/looser/Desktop/public_html/app/views/g/demo.blade.php",
 		"/home/looser/Desktop/rafik/slider.html",
 		"/opt/lampp/htdocs/cdg/index.html",
-		"/opt/lampp/htdocs/cdg/abcd.php",
 		"/home/looser/Desktop/public_html/app/routes.php",
-		"/home/looser/Desktop/public_html/app/views/site_includes/navbar.blade.php",
-		"/home/looser/Desktop/public_html/app/views/site/home.blade.php",
-		"/home/looser/Desktop/public_html/app/views/site_includes/header.blade.php",
 		"/home/looser/Desktop/cdg/abcd.php",
 		"/home/looser/Desktop/cdg/index.html",
 		"/home/looser/Desktop/public_html/app/config/customConfig.php",
-		"/home/looser/Desktop/public_html/app/views/site_includes/topbar.blade.php",
 		"/home/looser/Desktop/public_html/.htaccess",
-		"/home/looser/Desktop/public_html/app/views/site/seminar.blade.php",
 		"/home/looser/Desktop/Farhad/index.html",
 		"/home/looser/Desktop/Farhad/owwwlab.com/toranj/demo-1/index.html",
 		"/home/looser/Desktop/public_html/js/soon/custom.js",
-		"/home/looser/Desktop/public_html/app/views/site/project_showcasing.blade.php",
-		"/home/looser/Desktop/public_html/app/views/site/gaming_contest.blade.php",
-		"/home/looser/Desktop/public_html/app/views/site/software_contest.blade.php",
-		"/home/looser/Desktop/public_html/app/views/site/programming_contest.blade.php",
 		"/home/looser/Desktop/public_html/server.php",
 		"/home/looser/Desktop/public_html/app/config/view.php",
 		"/home/looser/Desktop/public_html/bootstrap/paths.php",
@@ -231,51 +357,7 @@
 		"/home/looser/Dropbox/NHSPC/Senior Final/A/output.out",
 		"/home/looser/Dropbox/NHSPC/Senior Final/A/output (BAIUST).out",
 		"/home/looser/Downloads/1 (1).txt",
-		"/home/looser/Downloads/0.txt",
-		"/home/looser/Downloads/0 (1).txt",
-		"/home/looser/Dropbox/NHSPC/upload/F/out.out",
-		"/home/looser/Downloads/0 (2).txt",
-		"/home/looser/Dropbox/NHSPC/upload/A/output_file_BAUIST.out",
-		"/home/looser/Desktop/000.txt",
-		"/home/looser/Desktop/needd",
-		"/home/looser/Downloads/0 (3).txt",
-		"/home/looser/rafikfarhad.github.io/_posts/2014-3-3-Hello-World.md",
-		"/home/looser/Downloads/1.txt",
-		"/home/looser/Desktop/Source code - Virtual Judge.html",
-		"/home/looser/Dropbox/forhad alif/tttt.php",
-		"/home/looser/Dropbox/junk/output.txt",
-		"/home/looser/Desktop/Pustok/resources/views/LendBook/lendbook.blade.php",
-		"/home/looser/Desktop/Pustok/resources/views/Status/status.blade.php",
-		"/home/looser/Desktop/Pustok/routes/web.php",
-		"/home/looser/Desktop/Pustok/app/Http/Controllers/statuscontroller.php",
-		"/media/looser/T3_SETUP/This is Read Only partition.txt",
-		"/media/looser/T3_SETUP/T3 Log In Activator for Android.txt",
-		"/home/looser/Desktop/Pustok/resources/views/WelcomePage/index.blade.php",
-		"/home/looser/Desktop/Pustok/resources/views/welcome.blade.php",
-		"/home/looser/Desktop/Pustok/resources/views/customregister.blade.php",
-		"/home/looser/Desktop/Pustok/app/Http/Controllers/customregister.php",
-		"/home/looser/Dropbox/Project_Pilot/Pilot/app/Http/Controllers/Auth/RegisterController.php",
-		"/home/looser/Desktop/Pustok/resources/views/register.blade.php",
-		"/home/looser/Dropbox/Project_Pilot/Pilot/resources/views/auth/login.blade.php",
-		"/home/looser/Desktop/Pustok/resources/views/auth/register.blade.php",
-		"/home/looser/Desktop/Pustok/public/css/ex.css",
-		"/home/looser/Desktop/Pustok/resources/views/Expired/ExpiredPage.blade.php",
-		"/home/looser/Desktop/Pustok/app/Http/Controllers/ExpiredPageController.php",
-		"/home/looser/Desktop/Pustok/resources/views/LoanHistory/loanhistory.blade.php",
-		"/home/looser/Desktop/Pustok/public/AddBook/assets/form-basic.css",
-		"/home/looser/Desktop/Pustok/public/css/app.css",
-		"/home/looser/Desktop/Metronic Admin Theme #2 _ Responsive Bootstrap Tables.html",
-		"/home/looser/Desktop/Pustok/app/Http/Controllers/ExpiredPage.php",
-		"/home/looser/Desktop/Pustok/resources/views/basic.blade.php",
-		"/home/looser/Desktop/Pustok/app/Http/Controllers/Helper.php",
-		"/home/looser/Desktop/Pustok/.gitignore",
-		"/home/looser/Dropbox/Topcoder/Arena/precode.txt",
-		"/home/looser/Dropbox/Project_Pilot/test.txt",
-		"/home/looser/Desktop/Event Time Announcer.html",
-		"/home/looser/Dropbox/Project_Pilot/abc test.txt",
-		"/home/looser/Desktop/tttt.php",
-		"/home/looser/Desktop/Pustok/database/migrations/2017_01_29_082116_loans.php",
-		"/home/looser/Desktop/Pustok/resources/views/RecieveBook/recievebook.blade.php"
+		"/home/looser/Downloads/0.txt"
 	],
 	"find":
 	{
@@ -286,6 +368,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"/home/looser/Desktop/public_html/app/views",
 			"/home/looser/Desktop/public_html/app",
 			"/home/looser/Desktop/Pustok/resources",
 			"/home/looser/Desktop/Pustok",
@@ -297,6 +380,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h3",
+			"-->",
+			" <!--",
+			"helper",
+			"))",
+			"((",
+			"data1",
+			"admin/dashboard/time",
+			"-->",
+			"<!--",
+			"btn",
+			"<form",
+			"exampleModal",
+			" {{csrf_field()}}",
+			"{{$request}}",
+			"sess",
 			"00ccff",
 			"./IPVision SUST 6th CSE Carnival -2017_files",
 			"assets/",
@@ -369,6 +468,17 @@
 		"regex": false,
 		"replace_history":
 		[
+			"h5",
+			"--}}",
+			"{{--",
+			"}}",
+			"{{",
+			"datas",
+			"admin/dashboard/judge",
+			"}}",
+			"{{",
+			"editleModal",
+			"",
 			"000000",
 			"carnival_assets",
 			"carnival_assets/gallery/",
@@ -397,7 +507,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -413,8 +523,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								2461,
+								2461
 							]
 						],
 						"settings":
@@ -423,27 +533,86 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 375.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/site/home.blade.php",
+					"file": "app/views/site/software_contest.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7026,
+						"buffer_size": 1420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1125,
+								1125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/DashboardController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5203,
+								5203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2970.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/includes/header.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								690,
+								690
 							]
 						],
 						"settings":
@@ -456,36 +625,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/views/g/index.blade.php",
+					"buffer": 4,
+					"file": "app/views/site/gaming_contest.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7757,
+						"buffer_size": 1917,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1084,
+								1084
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 390.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -531,7 +701,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "untitled.sublime-project",
+	"project": "CSE.sublime-project",
 	"replace":
 	{
 		"height": 62.0

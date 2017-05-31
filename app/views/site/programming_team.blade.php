@@ -25,28 +25,25 @@
     <!-- header begin -->
     <!-- header begin -->
     <!-- header begin -->
-    <header class="page-head" style="background-image: url('{{asset('carnival_assets/img/pc_banner.png')}}');">
+    <?php
+    $data = DB::table('pages')->where('slug', 'pc')->first();
+    
+    ?>
+
+    <header>
+
         <div class="header-wrapper">
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Teams</a></li>
-                            <li class="active">Programming Contest Teams</li>
-                        </ol>
-
-                    </div>
-                </div>
-            </div> --> <!-- /.container -->
+            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
         </div> <!-- /.header-wrapper -->
-    </header> <!-- /.page-head (header end) -->
 
 
     <section class="main-content">
         <div class="container">
             <div class="row">
+            <a  class="btn pull-right" style="margin-bottom: 70px; size: 100px" href="{{url('/')}}/registration/edit">Request an Edit</a>
+            </div>
+            <div class="row">
+
                 <div class="col-md-12">
                     <table class="text-center table table-bordered">
                         <tr>

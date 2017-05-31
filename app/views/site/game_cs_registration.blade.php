@@ -24,7 +24,19 @@
             <!-- end of /#navigation -->
     <!-- header begin -->
     <!-- header begin -->
-    <header class="page-head" style="background-image: url('{{asset('carnival_assets/img/gc_banner.jpg')}}');">
+    <?php
+    $data = DB::table('pages')->where('slug', 'game')->first();
+    
+    ?>
+
+    <header>
+
+        <div class="header-wrapper">
+            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
+        </div> <!-- /.header-wrapper -->
+    </header> <!-- /.page-head (header end) -->
+
+
         <div class="header-wrapper">
             <!-- <div class="container">
                 <div class="row">

@@ -220,7 +220,7 @@ class DashboardController extends \BaseController {
 		$datas = Page::where('id', $input['rid'])->get();
 		return View::make('dashboard_pages')
 		->with('datas',$datas)
-		->with('title','Judges');
+		->with('title','Pages');
 
 
 	}

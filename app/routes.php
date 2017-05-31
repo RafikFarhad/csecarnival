@@ -162,6 +162,8 @@ Route::get('result/gamingCompetition',['as' => 'result.gc', 'uses' => 'ResultCon
 Route::get('registration/programmingContest',['as' => 'reg.pc', 'uses' => 'ContestController@pc']);
 Route::get('registration/programmingContestOld',['as' => 'reg.pc.b', 'uses' => 'ContestController@pc']);
 Route::post('registration/programmingContest',['as' => 'reg.pc.store', 'uses' => 'ContestController@pc_store']);
+Route::get('registration/edit',['as' => 'registration/edit', 'uses' => 'EditController@pc']);
+Route::post('registration/edit',['as' => 'registration/edit', 'uses' => 'EditController@save']);
 
 //software contest
 Route::get('registration/softwareContest',['as' => 'reg.sc', 'uses' => 'ContestController@shesh']);

@@ -25,7 +25,16 @@
     <!-- header begin -->
     <!-- header begin -->
     <!-- header begin -->
-    <header class="page-head" style="background-image: url('{{asset('carnival_assets/img/ps_banner.png')}}');">
+    <?php
+    $data = DB::table('pages')->where('slug', 'ps')->first();
+    
+    ?>
+
+    <header>
+
+        <div class="header-wrapper">
+            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
+        </div> <!-- /.header-wrapper -->
         <div class="header-wrapper" >
             <!-- <div class="container">
                 <div class="row">

@@ -12,7 +12,7 @@
 -->
 
 @include('site_includes.topbar')
-        <!-- top navigation bar FINISH-->
+<!-- top navigation bar FINISH-->
 
 <!--
 =============================================
@@ -21,10 +21,22 @@
 -->
 
 @include('site_includes.navbar')
-        <!-- end of /#navigation -->
+<!-- end of /#navigation -->
 <!-- header begin -->
-<header class="page-head" style="background-image: url('{{asset('carnival_assets/img/events_banner.jpg')}}');">
-    <div class="header-wrapper" >
+<?php
+$data = DB::table('pages')->where('slug', 'ep')->first();
+
+$date = explode("*", $data->dates);
+?>
+
+<header>
+
+    <div class="header-wrapper">
+        <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
+    </div> <!-- /.header-wrapper -->
+</header> <!-- /.page-head (header end) -->
+
+<div class="header-wrapper" >
         <!-- <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -54,7 +66,17 @@
         <div class="event-description">
             <div class="row">
                 <div class="col-md-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/pc_banner.png')}}" alt="Event Featured Image">
+                    <?php
+                    $data = DB::table('pages')->where('slug', 'pc')->first();
+
+                    $date = explode("*", $data->dates);
+                    ?>
+
+
+                        <div class="header-wrapper">
+                        <img style="height: 100px;" class="img-responsive center-block" src="{{asset('carnival_assets/banners').'/'.$data->banner}}" alt="Event Featured Image">
+                        </div> 
+
                 </div>
 
                 <div class="col-md-6">
@@ -70,69 +92,110 @@
         <div class="event-description">
             <div class="row">
                 <div class="col-md-6 col-md-push-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/sc_banner.png')}}" alt="Event Featured Image">
+                    <?php
+                    $data = DB::table('pages')->where('slug', 'sc')->first();
+
+                    $date = explode("*", $data->dates);
+                    ?>
+
+
+                        <div class="header-wrapper">
+                        <img style="height: 100px;" class="img-responsive center-block" src="{{asset('carnival_assets/banners').'/'.$data->banner}}" alt="Event Featured Image">
+                        </div> 
+
                 </div>
 
-                <div class="col-md-6 col-md-pull-6">
+                <div class="col-md-6 col-md-pull-6 ">
                     <h3>SUST Inter University Software Contest (SIUSC)</h3>
 
                     <a href="{{route('event.sc')}}" class="btn btn-black">Event Details</a>
                     <a href="{{route('reg.sc')}}" class="btn btn-black">Register Now</a>                </div>
-            </div>
-        </div>
-
-
-        <div class="event-description">
-            <div class="row">
-                <div class="col-md-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/ps_banner.png')}}" alt="Event Featured Image">
-                </div>
-
-                <div class="col-md-6">
-                    <h3>Project Showcasing</h3>
-                    <a href="{{route('event.ps')}}" class="btn btn-black">Event Details</a>
-                    <a href="{{route('reg.ps')}}" class="btn btn-black">Register Now</a>
                 </div>
             </div>
-        </div>
 
-        <div class="event-description">
-            <div class="row">
-                <div class="col-md-6  col-md-push-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/rc_banner.png')}}" alt="Event Featured Image">
+
+            <div class="event-description">
+                <div class="row">
+                    <div class="col-md-6">
+                    <?php
+                    $data = DB::table('pages')->where('slug', 'ps')->first();
+
+                    $date = explode("*", $data->dates);
+                    ?>
+
+
+                        <div class="header-wrapper">
+                        <img style="height: 100px;" class="img-responsive center-block" src="{{asset('carnival_assets/banners').'/'.$data->banner}}" alt="Event Featured Image">
+                        </div> 
+
                 </div>
 
-                <div class="col-md-6 col-md-pull-6">
-                    <h3>Robotics Competition</h3>
-                    <a href="{{route('event.rc')}}" class="btn btn-black">Event Details</a>
-                    <a href="{{route('reg.rc')}}" class="btn btn-black">Register Now</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="event-description">
-            <div class="row">
-                <div class="col-md-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/gc_banner.png')}}" alt="Event Featured Image">
-                </div>
-
-                <div class="col-md-6 ">
-                    <h3>Gaming Competition</h3>
-
-                    <a href="{{route('event.gc')}}" class="btn btn-black">Event Details</a>
-                    <a href="{{route('reg.gc')}}" class="btn btn-black">Register Now</a>
+                    <div class="col-md-6">
+                        <h3>Project Showcasing</h3>
+                        <a href="{{route('event.ps')}}" class="btn btn-black">Event Details</a>
+                        <a href="{{route('reg.ps')}}" class="btn btn-black">Register Now</a>
+                    </div>
                 </div>
             </div>
+
+            <div class="event-description">
+                <div class="row">
+                    <div class="col-md-6 col-md-push-6">
+                    <?php
+                    $data = DB::table('pages')->where('slug', 'rc')->first();
+
+                    $date = explode("*", $data->dates);
+                    ?>
+
+
+                        <div class="header-wrapper">
+                        <img style="height: 100px;" class="img-responsive center-block" src="{{asset('carnival_assets/banners').'/'.$data->banner}}" alt="Event Featured Image">
+                        </div> 
+
+                </div>
+
+                    <div class="col-md-6 col-md-pull-6">
+                        <h3>Robotics Competition</h3>
+                        <a href="{{route('event.rc')}}" class="btn btn-black">Event Details</a>
+                        <a href="{{route('reg.rc')}}" class="btn btn-black">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="event-description">
+                <div class="row">
+                    <div class="row">
+                    <div class="col-md-6">
+                    <?php
+                    $data = DB::table('pages')->where('slug', 'game')->first();
+
+                    $date = explode("*", $data->dates);
+                    ?>
+
+
+                        <div class="header-wrapper">
+                        <img style="height: 100px;" class="img-responsive center-block" src="{{asset('carnival_assets/banners').'/'.$data->banner}}" alt="Event Featured Image">
+                        </div> 
+
+                </div>
+
+                    <div class="col-md-6 ">
+                        <h3>Gaming Competition</h3>
+
+                        <a href="{{route('event.gc')}}" class="btn btn-black">Event Details</a>
+                        <a href="{{route('reg.gc')}}" class="btn btn-black">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+    </section>
 
 
-    </div>
-</section>
+    <!--  Necessary scripts  -->
+    <!--  Necessary scripts  -->
 
-
-<!--  Necessary scripts  -->
-<!--  Necessary scripts  -->
-
-@include('site_includes.footer')
-@stop
+    @include('site_includes.footer')
+    @stop

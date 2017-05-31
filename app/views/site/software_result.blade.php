@@ -26,23 +26,16 @@
     <!-- header begin -->
     <!-- header begin -->
     <!-- header begin -->
-    <header class="page-head" style="background-image: url('{{asset('carnival_assets/img/sc_banner.png')}}');">
-        <div class="header-wrapper" >
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
+    <?php
+    $data = DB::table('pages')->where('slug', 'sc')->first();
+    
+    ?>
 
-                        <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Teams</a></li>
-                            <li class="active">Software Contest Teams</li>
-                        </ol> 
+    <header>
 
-                    </div>
-                </div>
-            </div> --> <!-- /.container -->
+        <div class="header-wrapper">
+            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
         </div> <!-- /.header-wrapper -->
-    </header> <!-- /.page-head (header end) -->
 
 
     <section class="main-content">

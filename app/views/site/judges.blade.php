@@ -24,22 +24,19 @@
 <!-- end of /#navigation -->
 <!-- header begin --> 
 <!-- header begin -->
-<header class="page-head" style="background-image: url('{{asset('carnival_assets/img/events_banner.jpg')}}');">
-    <div class="header-wrapper" >
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
+<?php
+    $data = DB::table('pages')->where('slug', 'ep')->first();
+    
+    ?>
 
-                        <ol class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active">Schedule</li>
-                        </ol> 
+    <header>
 
-                    </div>
-                </div>
-            </div> --> <!-- /.container -->
+        <div class="header-wrapper">
+            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
         </div> <!-- /.header-wrapper -->
     </header> <!-- /.page-head (header end) -->
+
+
 
 
     <section class="main-content">

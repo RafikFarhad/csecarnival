@@ -17,6 +17,7 @@
 
         <!--right slidebar-->
         {{ HTML::style('css/slidebars.css') }}
+        <link rel="icon" href="favicon.ico">
 
         <!-- Custom styles for this template -->
         {{ HTML::style('css/style.css') }}
