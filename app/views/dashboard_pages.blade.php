@@ -10,7 +10,7 @@
 	<select class="btn btn-default dropdown-toggle" aria-expanded="false"  id="option1" name="do" onchange="this.form.submit()"  >
 		<option value="0"> Choose a page </option>
 		<option value="1"> Programming Contest </option>
-		<option value="2"> Software Contest </option>
+		<option value="2"> Hackathon </option>
 		<option value="3"> Project Showcasing </option>
 		<option value="4"> Robotics Competition</option>
 		<option value="5"> Game </option>

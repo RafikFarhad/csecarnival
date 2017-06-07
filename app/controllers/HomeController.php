@@ -21,7 +21,7 @@ class HomeController extends BaseController {
 	}
 	public function index()
 	{
-		$events = Time::orderBy('date', 'ASC')->get();
+		$events = Time::orderBy('date', 'ASC')->orderBy('time')->get();
 		$dates = DB::table('time')
 		            ->select('date')
 		            ->groupBy('date')
@@ -35,7 +35,7 @@ class HomeController extends BaseController {
 
 	public function schedule(){
 
-		$events = Time::orderBy('date', 'ASC')->get();
+		$events = Time::orderBy('date', 'ASC')->orderBy('time')->get();
 		$dates = DB::table('time')
 		            ->select('date')
 		            ->groupBy('date')

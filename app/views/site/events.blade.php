@@ -106,7 +106,7 @@ $date = explode("*", $data->dates);
                 </div>
 
                 <div class="col-md-6 col-md-pull-6 ">
-                    <h3>SUST Inter University Software Contest (SIUSC)</h3>
+                    <h3>Hackathon</h3>
 
                     <a href="{{route('event.sc')}}" class="btn btn-black">Event Details</a>
                     <a href="{{route('reg.sc')}}" class="btn btn-black">Register Now</a>                </div>
@@ -155,7 +155,7 @@ $date = explode("*", $data->dates);
                 </div>
 
                     <div class="col-md-6 col-md-pull-6">
-                        <h3>Robotics Competition</h3>
+                        <h3>Robotics Contest</h3>
                         <a href="{{route('event.rc')}}" class="btn btn-black">Event Details</a>
                         <a href="{{route('reg.rc')}}" class="btn btn-black">Register Now</a>
                     </div>
@@ -181,7 +181,7 @@ $date = explode("*", $data->dates);
                 </div>
 
                     <div class="col-md-6 ">
-                        <h3>Gaming Competition</h3>
+                        <h3>Gaming Contest</h3>
 
                         <a href="{{route('event.gc')}}" class="btn btn-black">Event Details</a>
                         <a href="{{route('reg.gc')}}" class="btn btn-black">Register Now</a>

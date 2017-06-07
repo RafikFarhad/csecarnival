@@ -94,7 +94,7 @@
 <marquee class="text" style="position: fixed; top: 10; left: 0; background:rgba(240,240,240,.5); color: #000000; ">The Department of Computer Science & Engineering (CSE) of Shahjalal University of Science & Technology (SUST) is going to organize one of the biggest national event of Bangladesh, CSE Carnival 2017 on August 04-05, 2017 at SUST campus in association with CSE Society, SUST
 The main events of this program are: 
 # SUST Inter University Programming Contest (SIUPC)
-# SUST Inter University Software Contest (SIUSC)
+# Hackathon
 # Project Showcasing
 # Robotics Competition
 # Gaming Contest

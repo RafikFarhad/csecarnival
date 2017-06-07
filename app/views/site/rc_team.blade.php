@@ -3,40 +3,40 @@
 @section('content')
 
 
-    <body>
+<body>
 
     <!--
     =============================================
       top navigation bar
     =============================================
-    -->
+-->
 
-    @include('site_includes.topbar')
-            <!-- top navigation bar FINISH-->
+@include('site_includes.topbar')
+<!-- top navigation bar FINISH-->
 
     <!--
     =============================================
         main navigation bar
     =============================================
-    -->
+-->
 
-    @include('site_includes.navbar')
-            <!-- end of /#navigation -->
-    <!-- header begin -->
-    <!-- header begin -->
-    <!-- header begin -->
-    <?php
-    $data = DB::table('pages')->where('slug', 'rc')->first();
-    
-    ?>
+@include('site_includes.navbar')
+<!-- end of /#navigation -->
+<!-- header begin -->
+<!-- header begin -->
+<!-- header begin -->
+<?php
+$data = DB::table('pages')->where('slug', 'rc')->first();
 
-    <header>
+?>
 
-        <div class="header-wrapper">
-            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
-        </div> <!-- /.header-wrapper -->
+<header>
 
+    <div class="header-wrapper">
+        <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
+    </div> <!-- /.header-wrapper -->
 
+</header>
     <section class="main-content">
         <div class="container">
             <div class="row">
@@ -45,7 +45,7 @@
                         <tr>
                             <th>Team Number</th>
                             <th>Team Name</th>
-                            <th>University Name</th>
+                            <th>Number of Members</th>
                             <th>Status</th>
                             <th>Team Details</th>
                         </tr>
@@ -54,7 +54,7 @@
                         <tr>
                             <td>{{$count}}</td>
                             <td>{{$team->team_name}}</td>
-                            <td>{{$team->university}}</td>
+                            <td>{{$team->number}}</td>
                             @if($team->status == 0)
                             <td style="color:red">Pending</td>
                             @elseif($team->status == 1)
@@ -83,33 +83,52 @@
 
 
     @foreach($teams as $team)
-    <div id="programmingTeam{{$team->id}}" class="container text-center" style="display: none;">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="{{asset("uploads/registration/$team->member1_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
-                        <h4><em>{{$team->member1_name}}</em></h4>
-                        <p>Participant 1, {{$team->team_name}}</p>
-                    </div>
+    <div id="programmingTeam{{$team->id}}" class="container text-center" style="display: none; ">
+        <div >
+            <h2 >
+                {{$team->team_name}}
+            </h2>
 
-                    <div class='col-md-4'>
-                        <img src="{{asset("uploads/registration/$team->member2_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
-                        <h4><em>{{$team->member2_name}}</em></h4>
-                        <p>Participant 2, {{$team->team_name}}</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <img src="{{asset("uploads/registration/$team->member3_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
-                        <h4><em>{{$team->member3_name}}</em></h4>
-                        <p>Participant 3, {{$team->team_name}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <table class="table table-bordered" style="margin: 0 auto; width: 500px">
+                    <tr>
+                        <th>
+                         Team Leader
+                     </th>
+                     <th>
+                        Member1
+                    </th>
+                    <th>
+                        Member2
+                    </th>
+                    <th>
+                        Member3
+                    </th>
+                    <th>
+                        Member4
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        {{$team->team_leader}}
+                    </td>
+                    <td>
+                        {{$team->member1_name}}
+                    </td>
+                    <td>
+                        {{$team->member2_name}}
+                    </td>
+                    <td>
+                        {{$team->member3_name}}
+                    </td>
+                    <td>
+                        {{$team->member4_name}}
+                    </td>
+                </tr>
+            </table>
     </div>
-    @endforeach
-    
+</div>
+@endforeach
+
     <!-- <section class="main-content">
         <div class="container">
             <div class="row">
@@ -123,4 +142,4 @@
     <!--  Necessary scripts  -->
 
     @include('site_includes.footer')
-@stop
+    @stop

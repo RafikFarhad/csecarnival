@@ -53,7 +53,7 @@
                             Programming Contest
                         </a>
                         <a href="{{route('event.sc')}}" class="btn btn-registeration text-capitalize">
-                            Software Contest
+                            Hackathon
                         </a>
                         <a href="{{route('event.rc')}}" class="btn btn-registeration text-capitalize">
                             Robotics Competition
@@ -147,11 +147,11 @@
             <h3 class="col-md-12 text-center">Full Schedule Will Be Added Soon.</h3>
             {{-- <small>Shortest way to explore what will happen on Carnival</small>   --}}
             @endif
-            <div class="row col-md-10">
+            <div style="width: 70%; margin: 0 auto; ">
                 <?php $day = 1;?>
                 @foreach($dates as $date)
                 <div style="">
-                    <h3>Day {{$day++}} ({{(new DateTime($date->date))->format('d/m/Y - l')}})</h3>
+                    <h3 align="center">Day {{$day++}} ({{(new DateTime($date->date))->format('d/m/Y - l')}})</h3>
                     <table class="text-center table table-bordered">
                         <tr>
                             <th>Time</th>

@@ -9,7 +9,7 @@
 {{ Form::open(array('url' => 'admin/dashboard/list')) }}
 
 {{Form::select('type', array('pc' => 'Programming Contest', 
-	'sc' => 'Software Contest',  
+	'sc' => 'Hackathon',  
 	'ps' => 'Project Showcasing'), 'pc');}}
 	<br><br>
 	{{-- <label>

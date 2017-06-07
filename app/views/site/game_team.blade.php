@@ -61,11 +61,12 @@
             -->
             <div class="row">
                 <div class="col-md-12">
-                    <table class="text-center table table-bordered">
+                    <table class="table text-center table-bordered">
                         <tr>
                             <th>Serial</th>
                             <th>Participant Photo</th>
                             <th>Participant Name</th>
+                            <th>University</th>
                             <th>Game</th>
                             <th>Status</th>
                         </tr>
@@ -73,8 +74,9 @@
                         @foreach($teams as $team)
                         <tr>
                             <td>{{$count}}</td>
-                            <td><img src="{{asset("uploads/registration/$team->member_photo")}}" class="img-thumbnail img-responsive" style="width: 80px; height: 80px;"></td>
+                            <td><img src="{{asset("uploads/registration/gc/$team->member_photo")}}" class="img-thumbnail img-responsive" style="width: 80px; height: 80px;"></td>
                             <td>{{$team->member_name}}</td>
+                            <td>{{$team->university}}</td>
                             <td>{{$team->contest}}</td>
                             @if($team->status == 0)
                             <td style="color:red">Pending</td>

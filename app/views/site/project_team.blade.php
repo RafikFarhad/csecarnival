@@ -3,39 +3,39 @@
 @section('content')
 
 
-    <body>
+<body>
 
     <!--
     =============================================
       top navigation bar
     =============================================
-    -->
+-->
 
-    @include('site_includes.topbar')
-            <!-- top navigation bar FINISH-->
+@include('site_includes.topbar')
+<!-- top navigation bar FINISH-->
 
     <!--
     =============================================
         main navigation bar
     =============================================
-    -->
+-->
 
-    @include('site_includes.navbar')
-            <!-- end of /#navigation -->
-    <!-- header begin -->
-    <!-- header begin -->
-    <!-- header begin -->
-    <?php
-    $data = DB::table('pages')->where('slug', 'ps')->first();
-    
-    ?>
+@include('site_includes.navbar')
+<!-- end of /#navigation -->
+<!-- header begin -->
+<!-- header begin -->
+<!-- header begin -->
+<?php
+$data = DB::table('pages')->where('slug', 'ps')->first();
 
-    <header>
+?>
 
-        <div class="header-wrapper">
-            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
-        </div> <!-- /.header-wrapper -->
-        <div class="header-wrapper" >
+<header>
+
+    <div class="header-wrapper">
+        <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
+    </div> <!-- /.header-wrapper -->
+    <div class="header-wrapper" >
             <!-- <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -56,6 +56,37 @@
     <section class="main-content">
         <div class="container">
             <div class="row">
+                @if(sizeof($teams)==0)
+                <style>
+                    @keyframes blink {  
+                        0% { color: red; }
+                        100% { color: black; }
+                    }
+                    @-webkit-keyframes blink {
+                        0% { color: red; }
+                        100% { color: black; }
+                    }
+                    .blink {
+                        -webkit-animation: blink 1s linear infinite;
+                        -moz-animation: blink 1s linear infinite;
+                        -ms-animation: blink 1s linear infinite;
+                        -o-animation: blink 1s linear infinite;
+                        animation: blink 1s linear infinite;
+                    } 
+
+                </style>
+
+                <section class="main-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 align="center" style='color:red' class="blink"> No Team Registered!!!{{-- Oops....Registration Closed !!! --}}</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                @else
                 <div class="col-md-12">
                     <table class="text-center table table-bordered">
                         <tr>
@@ -88,6 +119,7 @@
                         @endforeach
                     </table>
                 </div>
+                @endif
             </div>
         </div>
     </section>
@@ -104,19 +136,19 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="{{asset("uploads/registration/$team->member1_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
+                        <img src="{{asset("uploads/registration/ps/$team->member1_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
                         <h4><em>{{$team->member1_name}}</em></h4>
                         <p>Participant 1, {{$team->team_name}}</p>
                     </div>
 
                     <div class='col-md-4'>
-                        <img src="{{asset("uploads/registration/$team->member2_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
+                        <img src="{{asset("uploads/registration/ps/$team->member2_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
                         <h4><em>{{$team->member2_name}}</em></h4>
                         <p>Participant 2, {{$team->team_name}}</p>
                     </div>
 
                     <div class="col-md-4">
-                        <img src="{{asset("uploads/registration/$team->member3_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
+                        <img src="{{asset("uploads/registration/ps/$team->member3_photo")}}" style="width: 150px; height: 150px;" class="img-circle img-responsive center-block" alt="Participant 1">
                         <h4><em>{{$team->member3_name}}</em></h4>
                         <p>Participant 3, {{$team->team_name}}</p>
                     </div>
@@ -139,4 +171,4 @@
     <!--  Necessary scripts  -->
 
     @include('site_includes.footer')
-@stop
+    @stop

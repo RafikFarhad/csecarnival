@@ -27,7 +27,7 @@
     {{ HTML::style('carnival_assets/css/owl.carousel.css') }}
     {{ HTML::style('carnival_assets/css/owl.theme.css') }}
     {{ HTML::style('carnival_assets/css/jquery.fancybox.min.css') }}
-    {{ HTML::style('carnival_assets/css/style.css') }}
+    {{ HTML::style('carnival_assets/css/style2.css') }}
     @yield('style')
 
     <!-- scripts -->
@@ -65,7 +65,8 @@
         {
             var r=e.querySelectorAll("html")[0];
             r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")
-        })(document,window,0);</script>
+        })(document,window,0);
+    </script>
 
         @yield('script')
     </head>

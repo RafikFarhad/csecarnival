@@ -46,13 +46,13 @@
 			</div>
 		</div>
 		<div class="panel-body">
-			<table class="display table table-bordered table-stripe">
+			<table class="table table-bordered table-stripe">
 				<thead>
 					<tr class="panel-default">
-						<th class="text-center" >ID</th>
+						{{-- <th class="text-center" >ID</th> --}}
 						<th class="text-center" >Date</th>
 						<th class="text-center" >Time</th>
-						<th class="text-center" >Description</th>
+						<th class="text-center" width="500px" >Description</th>
 						<th class="text-center" >Update</th>
 					</tr>
 				</thead>
@@ -60,18 +60,18 @@
 				<tbody>
 					@foreach($data1 as $dat)
 					<tr class="default">
-						<td>
-							<div class="text-center" style="height:100%;width:100%;font-size: 17px;">
+						{{-- <td>
+							<div class="text-center" >
 								{{$dat->id}}
 							</div>
-						</td>
+						</td> --}}
 						<td>
-							<div class="text-center" style="height:100%;width:100%;font-size: 17px;">
+							<div class="text-center" >
 								{{$dat->date}}
 							</div>
 						</td>
 						<td>
-							<div class="text-center" style="height:100%;width:100%;font-size: 17px;">
+							<div class="text-center" >
 								{{$dat->time}}
 							</div>
 						</td>
@@ -84,7 +84,7 @@
 						<td>
 							<div class="text-center">
 								<button type="submit" class="btn btn-warning btn-xs btn-edit" 
-								data-toggle="modal" data-target="#editleModal{{$dat->id}}" data-whatever="@mdo" style="height:20%;width:20%">
+								data-toggle="modal" data-target="#editleModal{{$dat->id}}" data-whatever="@mdo" style="height:20%;">
 								Edit
 							</button>
 							<button type="submit"  

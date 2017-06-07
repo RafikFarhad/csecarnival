@@ -26,5 +26,7 @@
 {{ HTML::script('carnival_assets/js/timer.js') }}
 {{ HTML::script('carnival_assets/js/wow.min.js') }}
 {{ HTML::script('carnival_assets/js/script.js') }}
+{{ HTML::script('carnival_assets/js/custom-file-input.js') }}
+{{-- <script src="js/custom-file-input.js"></script> --}}
 
 @yield('script')

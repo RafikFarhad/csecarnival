@@ -37,7 +37,7 @@ $data = DB::table('pages')->where('slug', 'ep')->first();
     </div> <!-- /.header-wrapper -->
 </header> <!-- /.page-head (header end) -->
 
-<h3 class="text-center" style="margin-top: 50px; color: RED">For multiple member change, submit this form twice.</h3>
+<h3 class="text-center" style="margin-top: 50px; color: RED">For multiple member change, submit this form multiple times.</h3>
 <section class="main-content">
     @include('site_includes.alert')
     {{ Form::open(array(url('/').'/registration/edit', 'files' => true)) }}
@@ -67,11 +67,11 @@ $data = DB::table('pages')->where('slug', 'ep')->first();
 
      
         <div class="form-group">
-            {{ Form::text('former_member_name', null, array('class' => 'form-control empty iconified',  'id'  => 'former_member_name', 'placeholder'   =>  '&#xf0c0;  Former Member Name')) }}
+            {{ Form::text('former_member_name', null, array('class' => 'form-control empty iconified',  'id'  => 'former_member_name', 'placeholder'   =>  '&#xf183;  Former Member Name')) }}
 
         </div> 
         <div class="form-group">
-            {{ Form::text('new_member_name', null, array('class' => 'form-control empty iconified', 'id'  => 'new_member_name', 'placeholder'   =>  '&#xf0c0;  New Member Name')) }}
+            {{ Form::text('new_member_name', null, array('class' => 'form-control empty iconified', 'id'  => 'new_member_name', 'placeholder'   =>  '&#xf183;  New Member Name')) }}
 
         </div> 
 

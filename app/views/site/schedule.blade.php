@@ -25,15 +25,15 @@
 <!-- header begin -->
 <!-- header begin -->
 <?php
-    $data = DB::table('pages')->where('slug', 'ep')->first();
-    
-    ?>
+$data = DB::table('pages')->where('slug', 'ep')->first();
 
-    <header>
+?>
 
-        <div class="header-wrapper">
-            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
-        </div> <!-- /.header-wrapper -->
+<header>
+
+    <div class="header-wrapper">
+        <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
+    </div> <!-- /.header-wrapper -->
 
 
     <section class="main-content">
@@ -48,15 +48,17 @@
             <h3 class="col-md-12 text-center">Full Schedule Will Be Added Soon.</h3>
             @endif
             
-            <div class="row col-md-10">
+            <div >
 
+                <?php $day = 1; 
                 
-                <?php $day = 1;?>
-                @foreach($dates as $date)
 
-                <div style="">
-                    <h3>Day {{$day++}} ({{(new DateTime($date->date))->format('d/m/Y - l')}})</h3>
-                    <table class="text-center table table-bordered">
+                ?>
+                @foreach($dates as $date)
+                <div style="width: 70%; margin: 0 auto; ">
+
+                    <h3 align="center">Day {{$day++}} ({{(new DateTime($date->date))->format('d/m/Y - l')}})</h3>
+                    <table class="table table-bordered">
                         <tr>
                             <th>Time</th>
                             <th>Programme Description</th>

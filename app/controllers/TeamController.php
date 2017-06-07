@@ -19,7 +19,7 @@ class TeamController extends \BaseController {
 
 		return View::make('site.software_team')
 				->with('teams',$teams)
-				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Team ::. SUST Inter University Software Contest');
+				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Team ::. Hackathon');
 	}
 
 
@@ -31,9 +31,10 @@ class TeamController extends \BaseController {
 				->with('teams',$teams)
 				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Team ::. Project Showcasing');
 	}
-	//project showcase 
+	//Robotics Competition 
 	public function rc(){
-		 $teams = Registration::where('contest','=', 'rc')->orderBy('status', 'ASC')->orderBy('university', 'ASC')->get();
+		 $teams = RegistrationRC::orderBy('status', 'ASC')->get();
+
 		return View::make('site.rc_team')
 				->with('teams',$teams)
 				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Team ::. Robotics Competition');

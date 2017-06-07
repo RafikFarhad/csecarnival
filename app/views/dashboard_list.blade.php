@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>IPvision SUST 6th CSE Carnival 2017 :: <?php
 if($gg['type']=='pc') echo "Programming Contest";
-if($gg['type']=='sc') echo "Software Contest";
+if($gg['type']=='sc') echo "Hackathon";
 if($gg['type']=='ps') echo "Project Showcasing";
 ?></title>
 	<style>

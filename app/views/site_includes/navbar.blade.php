@@ -29,17 +29,17 @@
                                 <a href="{{route('event.pc')}}">Programmimg Contest</a>
                             </li>
                             <li>
-                                <a href="{{route('event.sc')}}">Software Contest</a>
+                                <a href="{{route('event.sc')}}">Hackathon</a>
                             </li>
                             <li>
                                 <a href="{{route('event.ps')}}">Project Showcasing</a>
                             </li>
                             <li>
-                                <a href="{{route('event.rc')}}">Robotics Competition</a>
+                                <a href="{{route('event.rc')}}">Robotics Contest</a>
                             </li>
 
                             <li>
-                                <a href="{{route('event.gc')}}">Gaming Competition</a>
+                                <a href="{{route('event.gc')}}">Gaming Contest</a>
                             </li>
                             <li>
                                 <a href="{{URL('seminar')}}">Seminar</a>
@@ -56,17 +56,21 @@
                                 <a href="{{route('team.pc')}}">Programmimg Contest Teams</a>
                             </li>
                             <li>
-                                <a href="{{route('team.sc')}}">Software Contest Teams</a>
+                                <a href="{{route('team.sc')}}">Hackathon Teams</a>
                             </li>
                             <li>
                                 <a href="{{route('team.ps')}}">Project Showcasing Teams</a>
                             </li>
                             <li>
-                                <a href="{{route('team.rc')}}">Robotics Competition Teams</a>
+                                <a href="{{route('team.rc')}}">Robotics Contest Teams</a>
                             </li>
 
-                            <li>
-                                <a href="{{route('team.gc')}}">Gaming Competition Participant</a>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gaming Contest Participants</a>
+                                <ul  class="dropdown-menu">
+                                    <a style="color: BLACK" href="{{route('team.gc')}} ">NFS/FIFA</a>
+                                    <a style="color: BLACK" href="{{route('team.gc.cs')}}">Call of Duty</a>
+                                </ul>
                             </li>
                         </ul>  <!-- end of /.dropdown-menu -->
                     </li>
@@ -77,13 +81,13 @@
                                 <a href="{{route('result.pc')}}">Programmimg Contest Result</a>
                             </li>
                             <li>
-                                <a href="{{route('result.sc')}}">Software Contest Result</a>
+                                <a href="{{route('result.sc')}}">Hackathon Result</a>
                             </li>
                             <li>
                                 <a href="{{route('result.ps')}}">Project Showcasing Result</a>
                             </li>
                             <li>
-                                <a href="{{route('result.gc')}}">Gaming Competition Result</a>
+                                <a href="{{route('result.gc')}}">Gaming Contest Result</a>
                             </li>
                         </ul>  <!-- end of /.dropdown-menu -->
                     </li> --}}
@@ -94,16 +98,20 @@
                                 <a href="{{route('reg.pc')}}">Programming Contest</a>
                             </li>
                             <li>
-                                <a href="{{route('reg.sc')}}">Software Contest</a>
+                                <a href="{{route('reg.sc')}}">Hackathon</a>
                             </li>
                             <li>
                                 <a href="{{route('reg.ps')}}">Project Showcasing</a>
                             </li>
                             <li>
-                                <a href="{{route('reg.rc')}}">Robotics Competition</a>
+                                <a href="{{route('reg.rc')}}">Robotics Contest</a>
                             </li>
-                            <li>
-                                <a href="{{route('reg.gc')}}">Gaming Competition</a>
+                             <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gaming Contest</a>
+                                <ul  class="dropdown-menu">
+                                    <a style="color: BLACK" href="{{route('reg.gc')}} ">NFS/FIFA</a>
+                                    <a style="color: BLACK" href="{{route('reg.gc.cs')}}">Call of Duty</a>
+                                </ul>
                             </li>
                         </ul>  <!-- end of /.dropdown-menu -->
                     </li> <!-- end of /.dropdown -->

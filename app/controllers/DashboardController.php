@@ -80,7 +80,7 @@ class DashboardController extends \BaseController {
 	{
 
 		
-		$teams = Time::orderBy('date', 'ASC')->get();
+		$teams = Time::orderBy('date', 'ASC')->orderBy('time')->get();
 
 		return View::make('dashboard_time')
 		->with('data1',$teams)
@@ -194,18 +194,21 @@ class DashboardController extends \BaseController {
 		$data = Page::where('id', $input['rid'])->get();
 		if (Input::hasFile('banner'))
 		{
-			$destinationPath = public_path('carnival_assets/banners/');
+			$destinationPath = __DIR__.'/../../carnival_assets/banners/';
 
-			$banner = Input::file('banner');
+//			               		COACH
 
-			$location = $destinationPath.'/' . 'banner_'.$data[0]['slug'].".".$banner->getClientOriginalExtension();
-			
-			Image::make($banner)->save($location);
+				$coach_photo = Input::file('banner');
+				$coach_photo_fileName = 'banner_'.$data[0]['slug'].".".$coach_photo->getClientOriginalExtension();
+				$location = $destinationPath.'/' . $coach_photo_fileName;
+				 Image::make($coach_photo)->save($location);
+
+
 			DB::table('pages')
 			->where('id', $input['rid'])
 			->update(
 				[ 
-				'banner' => 'banner_'.$data[0]['slug'].".".$banner->getClientOriginalExtension(),
+				'banner' => 'banner_'.$data[0]['slug'].".".$coach_photo->getClientOriginalExtension(),
 				]);
 			
 		}

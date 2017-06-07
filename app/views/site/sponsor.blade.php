@@ -12,7 +12,7 @@
 -->
 
 @include('site_includes.topbar')
-        <!-- top navigation bar FINISH-->
+<!-- top navigation bar FINISH-->
 
 <!--
 =============================================
@@ -21,41 +21,76 @@
 -->
 
 @include('site_includes.navbar')
-        <!-- end of /#navigation -->
+<!-- end of /#navigation -->
 <!-- header begin -->
 <?php
-    $data = DB::table('pages')->where('slug', 'sc')->first();
-    
-    ?>
+$data = DB::table('pages')->where('slug', 'sp')->first();
 
-    <header>
+?>
 
-        <div class="header-wrapper">
-            <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
-        </div> <!-- /.header-wrapper -->
+<header>
+
+    <div class="header-wrapper">
+        <img style="width: 100%;" src="{{asset('carnival_assets/banners').'/'.$data->banner}}">
+    </div> <!-- /.header-wrapper -->
 
 
-<section id="events" class="main-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>All Our Sponsors
-                    <small>Thanks for Supporting us</small>
-                    <!-- <img  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsors.jpg" alt="Sponsors"> -->
-                </h2>
-                <h2 align=center>Title Sponsor
-                <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/ipvision.jpg" alt="Sponsors">
-                </h2>
+    <section id="events" class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="width: 0 auto;">
+                    <h2>Thanks for Supporting us
+                        <small></small>
+                        <!-- <img  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsors.jpg" alt="Sponsors"> -->
+                    </h2>
+                    <h2 align=center>Title Sponsor
+                        <img style="height:150px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/ipvision.jpg" alt="Sponsors">
+                    </h2>
                 {{-- <h2 align=center>Supported By
                 <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/surecash.jpg" alt="Sponsors">
-                </h2> --}}
+            </h2> --}}
                 {{-- <h2 align=center>SIUSC Sponsor
                 <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/x10.jpg" alt="Sponsors">
-                </h2> --}}
-                <h2 align=center>T-Shirt Sponsor
+            </h2> --}}
+            <h3 align=center>T-Shirt Sponsor
                 <h4 align=center>SIUPC</h4>
-                <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/therap.jpg" alt="Sponsors">
-                </h2>
+                <img style="height:100px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/therap.jpg" alt="Sponsors">
+            </h3>
+            {{-- <div class="col-md-12" style="width: 0 auto; position: center">
+                <table >
+                    <thead>
+                        <tr class="col-md-2">
+                            <th>
+                                SIUPC
+                            </th>
+                        </tr>
+                        <tr class="col-md-2">
+
+                            <th>
+                                Hackathon
+                            </th>
+                        </tr>
+                        <tr class="col-md-2">
+
+                            <th>
+                                Project Showcasing
+                            </th>
+                        </tr>
+                        <tr class="col-md-2">
+
+                            <th>
+                                Robotics Contest
+                            </th>
+                        </tr>
+                        <tr class="col-md-2">
+
+                            <th>
+                                Gaming Contest
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div> --}}
                 {{-- <h2 align=center>Bag and Surprise Dinner Sponsor
                 <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/surecash.jpg" alt="Sponsors">
                 </h2>
@@ -64,67 +99,11 @@
                 </h2>
                 <h2 align=center>Media Partner
                 <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/media.jpg" alt="Sponsors">
-                </h2> --}}
-            </div>
+            </h2> --}}
         </div>
-        
-        
-
-<!-- this section commented out by masiur under the direction of ratul vai 
-            <div class="row" align=center>
-                    <h3>Title Sponsor</h3>
-                    
-                    <img style="height:200px" class="img-responsive center-block" src="https://pbs.twimg.com/profile_images/472948686217961473/E8-mXoQ3.png" alt="Event Featured Image"><h3>IPvision Canada Inc.</h3>
-
-            </div>
-        </div>
-
-        <div class="event-description">
-            <div class="row">
-                <div class="col-md-6 col-md-push-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/sc_banner.png')}}" alt="Event Featured Image">
-                </div>
-
-                <div class="col-md-6 col-md-pull-6">
-                    <h3>SUST Inter University Software Contest (SIUSC)</h3>
-
-                    <a href="{{route('event.sc')}}" class="btn btn-black">Event Details</a>
-                    <a href="{{route('reg.sc')}}" class="btn btn-black">Register Now</a>                </div>
-            </div>
-        </div>
-
-
-        <div class="event-description">
-            <div class="row">
-                <div class="col-md-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/ps_banner.png')}}" alt="Event Featured Image">
-                </div>
-
-                <div class="col-md-6">
-                    <h3>Project Showcasing</h3>
-                    <a href="{{route('event.ps')}}" class="btn btn-black">Event Details</a>
-                    <a href="{{route('reg.ps')}}" class="btn btn-black">Register Now</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="event-description">
-            <div class="row">
-                <div class="col-md-6 col-md-push-6">
-                    <img style="height:100px" class="img-responsive center-block" src="{{asset('carnival_assets/img/gc_banner.png')}}" alt="Event Featured Image">
-                </div>
-
-                <div class="col-md-6 col-md-pull-6">
-                    <h3>Gaming Competition</h3>
-
-                    <a href="{{route('event.gc')}}" class="btn btn-black">Event Details</a>
-                    <a href="{{route('reg.gc')}}" class="btn btn-black">Register Now</a>
-                </div>
-            </div>
-        </div>
-this section commented out by masiur under the direction of ratul vai-->
     </div>
+
+</div>
 </section>
 
 
@@ -133,3 +112,7 @@ this section commented out by masiur under the direction of ratul vai-->
 
 @include('site_includes.footer')
 @stop
+
+
+
+

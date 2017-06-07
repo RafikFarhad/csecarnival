@@ -24,7 +24,7 @@
                   <li>
                       <a href="/admin/dashboard/sc">
                           <i class="fa fa-tasks"></i>
-                          <span>Software Contest</span>
+                          <span>Hackathon</span>
                       </a>
                   </li>
                   <li>

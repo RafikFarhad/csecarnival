@@ -22,7 +22,7 @@ class ResultController extends \BaseController {
 				->with('web_2',$web_2)
 				->with('mobile_1',$mobile_1)
 				->with('mobile_2',$mobile_2)
-				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Result ::. SUST Inter University Software Contest');
+				->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Result ::. Hackathon');
 	}
 
 
