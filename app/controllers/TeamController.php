@@ -15,7 +15,7 @@ class TeamController extends \BaseController {
 
 	//software contest
 	public function sc(){
-		$teams = Registration::where('contest','=', 'sc')->orderBy('status', 'ASC')->orderBy('university', 'ASC')->get();
+		$teams = RegistrationGamesCS::where('type', 1)->orderBy('id', 'ASC')->get();
 
 		return View::make('site.software_team')
 				->with('teams',$teams)

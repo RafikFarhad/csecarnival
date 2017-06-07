@@ -137,22 +137,22 @@
 
  <section class="main-content">
         <div class="container">
-            <div class="row">
+            <div style="margin: 0px auto">
                 <div class="col-md-12 text-center">
                     <h2>Schedule of IPvision SUST 6<sup>th</sup> CSE CARNIVAL 2017</h2>
-
+            <small>Shortest way to explore what will happen on Carnival</small>  
+{{--  --}}
                 </div>
             </div>
             @if(sizeof($dates)==0)
-            <h3 class="col-md-12 text-center">Full Schedule Will Be Added Soon.</h3>
-            {{-- <small>Shortest way to explore what will happen on Carnival</small>   --}}
+            <h3 class="col-md-8 text-center">Full Schedule Will Be Added Soon.</h3>
             @endif
-            <div style="width: 70%; margin: 0 auto; ">
+            <div class="col-md-12 text-center" style="margin: 0px auto">
                 <?php $day = 1;?>
                 @foreach($dates as $date)
-                <div style="">
-                    <h3 align="center">Day {{$day++}} ({{(new DateTime($date->date))->format('d/m/Y - l')}})</h3>
-                    <table class="text-center table table-bordered">
+                <div style="margin: 0px auto">
+                    <h3 class="text-center">Day {{$day++}} ({{(new DateTime($date->date))->format('d/m/Y - l')}})</h3>
+                    <table style="margin: 0px auto" class="text-center table table-bordered">
                         <tr>
                             <th>Time</th>
                             <th>Programme Description</th>

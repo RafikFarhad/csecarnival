@@ -47,9 +47,7 @@
                             <th>Team Number</th>
                             <th>Team Name</th>
                             <th>University Name</th>
-                            <th>Track</th>
                             <th>Status</th>
-                            <th>Team Details</th>
                         </tr>
                         <?php $count=1; ?>
                         @foreach($teams as $team)
@@ -57,7 +55,6 @@
                             <td>{{$count}}</td>
                             <td>{{$team->team_name}}</td>
                             <td>{{$team->university}}</td>
-                            <td>{{strtoupper($team->sc_track)}}</td>
                             @if($team->status == 0)
                             <td style="color:red">Pending</td>
                             @elseif($team->status == 1)
@@ -69,7 +66,6 @@
                             @elseif($team->status == 4)
                             <td style="color:red">Cancel</td>
                             @endif
-                            <td><a href="#programmingTeam{{$team->id}}" class="btn btn-default fancybox">View Details</a></td>
                         </tr>
                         <?php $count++; ?>
                         @endforeach
