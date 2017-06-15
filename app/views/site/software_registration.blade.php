@@ -93,6 +93,7 @@
                                             <option>Begum Rokeya University</option>
                                             <option>Bangladesh Islami University</option>
                                             <option>Bangladesh University of Business and Technology</option>
+                                            <option>Bangladesh University of Professionals</option>
                                             <option>Bangladesh University</option>
                                             <option>Begum Gulchemonara Trust University Bangladesh</option>
                                             <option>BRAC University</option>

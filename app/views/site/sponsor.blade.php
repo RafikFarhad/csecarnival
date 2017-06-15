@@ -44,7 +44,7 @@ $data = DB::table('pages')->where('slug', 'sp')->first();
                         <!-- <img  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsors.jpg" alt="Sponsors"> -->
                     </h2>
                     <h2 align=center>Title Sponsor
-                        <img style="height:150px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/ipvision.jpg" alt="Sponsors">
+                        <img style="height:180px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/ipvision.jpg" alt="Sponsors">
                     </h2>
                 {{-- <h2 align=center>Supported By
                 <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/surecash.jpg" alt="Sponsors">
@@ -91,15 +91,19 @@ $data = DB::table('pages')->where('slug', 'sp')->first();
                     </thead>
                 </table>
             </div> --}}
-                {{-- <h2 align=center>Bag and Surprise Dinner Sponsor
+            {{-- <h2 align=center>Bag and Surprise Dinner Sponsor
                 <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/surecash.jpg" alt="Sponsors">
-                </h2>
-                <h2 align=center>Sponsors
+            </h2>
+            <h2 align=center>Sponsors
                 <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/all.jpg" alt="Sponsors">
-                </h2>
-                <h2 align=center>Media Partner
-                <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/media.jpg" alt="Sponsors">
             </h2> --}}
+            <h2 align=center style="margin-top: 70px;">Media Partner
+            <h4 align=center style="margin-top: 10px">Print Media</h4>
+            <img style="width:300px ; margin-top: 30px"  class="img-responsive center-block" src="{{asset('carnival_assets/').'/'}}jug.png" alt="Sponsors">
+            <h4 align=center style="margin-top: 30px">Online Media</h4>
+            <img style="width:300px ; margin-top: 30px"  class="img-responsive center-block" src="{{asset('carnival_assets/').'/'}}bdnews.png" alt="Sponsors">
+
+            </h2>
         </div>
     </div>
 
