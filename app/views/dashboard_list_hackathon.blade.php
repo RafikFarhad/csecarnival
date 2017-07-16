@@ -69,7 +69,8 @@ if($gg['type']=='ps') echo "Project Showcasing";
 			@endif
 
 			@if(array_key_exists('remarks', $gg))
-			<th>Proposal</th>
+				<th>Proposal</th>
+				<th>Achievement</th>
 			@endif
 		</tr>
 		@foreach($teams as $team)
@@ -116,7 +117,8 @@ if($gg['type']=='ps') echo "Project Showcasing";
             </td>
 			@endif
 			@if(array_key_exists('remarks', $gg))
-			<td> {{$team['proposal']}} </td>
+				<td> {{$team['proposal']}} </td>
+				<td> {{$team['last']}} </td>
 			@endif
 		</tr>
 		@endforeach

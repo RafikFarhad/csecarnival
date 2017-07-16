@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5e982d15dce2e578e59b1cb4a388d8aa",
     "content-hash": "a6f99a2d1995d697ccca4215466ed2ec",
     "packages": [
         {
@@ -68,7 +67,7 @@
                 "phpstorm",
                 "sublime"
             ],
-            "time": "2015-03-16 17:22:03"
+            "time": "2015-03-16T17:22:03+00:00"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -115,7 +114,7 @@
                 "class",
                 "preload"
             ],
-            "time": "2014-03-12 00:05:31"
+            "time": "2014-03-12T00:05:31+00:00"
         },
         {
             "name": "d11wtq/boris",
@@ -151,7 +150,7 @@
                 "MIT"
             ],
             "description": "A tiny, but robust REPL (Read-Evaluate-Print-Loop) for PHP.",
-            "time": "2015-03-01 08:05:19"
+            "time": "2015-03-01T08:05:19+00:00"
         },
         {
             "name": "filp/whoops",
@@ -209,7 +208,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-06-29 05:42:04"
+            "time": "2015-06-29T05:42:04+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -274,7 +273,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20 17:10:46"
+            "time": "2017-03-20T17:10:46+00:00"
         },
         {
             "name": "intervention/image",
@@ -344,7 +343,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2017-07-03 15:50:40"
+            "time": "2017-07-03T15:50:40+00:00"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -386,7 +385,7 @@
                 "hashing",
                 "password"
             ],
-            "time": "2014-11-20 16:49:30"
+            "time": "2014-11-20T16:49:30+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -434,7 +433,7 @@
                 "serialize",
                 "tokenizer"
             ],
-            "time": "2015-01-10 01:09:28"
+            "time": "2015-01-10T01:09:28+00:00"
         },
         {
             "name": "laravel/framework",
@@ -549,7 +548,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-11-12 01:41:37"
+            "time": "2016-11-12T01:41:37+00:00"
         },
         {
             "name": "laravelbook/ardent",
@@ -602,7 +601,7 @@
                 "sql",
                 "validation"
             ],
-            "time": "2015-09-07 17:00:50"
+            "time": "2015-09-07T17:00:50+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -680,7 +679,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19 01:22:40"
+            "time": "2017-06-19T01:22:40+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -733,7 +732,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2017-01-16 07:55:07"
+            "time": "2017-01-16T07:55:07+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -778,7 +777,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-07-23 18:24:17"
+            "time": "2014-07-23T18:24:17+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -826,7 +825,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2017-03-13 16:22:52"
+            "time": "2017-03-13T16:22:52+00:00"
         },
         {
             "name": "patchwork/utf8",
@@ -885,7 +884,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2016-05-18 13:57:10"
+            "time": "2016-05-18T13:57:10+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -934,7 +933,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2016-01-25 08:17:30"
+            "time": "2016-01-25T08:17:30+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -1032,7 +1031,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2015-01-28 21:50:33"
+            "time": "2015-01-28T21:50:33+00:00"
         },
         {
             "name": "predis/predis",
@@ -1082,7 +1081,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2014-08-01 09:43:10"
+            "time": "2014-08-01T09:43:10+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1132,7 +1131,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06 14:39:51"
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
@@ -1179,7 +1178,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "stack/builder",
@@ -1228,7 +1227,7 @@
             "keywords": [
                 "stack"
             ],
-            "time": "2016-06-02 06:58:42"
+            "time": "2016-06-02T06:58:42+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1282,7 +1281,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-05-01 15:54:03"
+            "time": "2017-05-01T15:54:03+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -1339,7 +1338,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-15 13:33:54"
+            "time": "2017-06-15T13:33:54+00:00"
         },
         {
             "name": "symfony/class-loader",
@@ -1392,7 +1391,7 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-05 06:50:35"
+            "time": "2017-07-05T06:50:35+00:00"
         },
         {
             "name": "symfony/console",
@@ -1452,7 +1451,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-01 09:26:27"
+            "time": "2017-07-01T09:26:27+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -1505,7 +1504,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2017-04-29 15:58:46"
+            "time": "2017-04-29T15:58:46+00:00"
         },
         {
             "name": "symfony/debug",
@@ -1562,7 +1561,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01 20:44:56"
+            "time": "2017-06-01T20:44:56+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -1617,7 +1616,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-22 11:36:46"
+            "time": "2017-05-22T11:36:46+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1677,7 +1676,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-02 07:47:27"
+            "time": "2017-06-02T07:47:27+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -1726,7 +1725,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-20 23:27:56"
+            "time": "2017-06-20T23:27:56+00:00"
         },
         {
             "name": "symfony/finder",
@@ -1775,7 +1774,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01 20:44:56"
+            "time": "2017-06-01T20:44:56+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -1831,7 +1830,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-14 19:35:44"
+            "time": "2017-06-14T19:35:44+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -1914,7 +1913,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-05 07:16:12"
+            "time": "2017-07-05T07:16:12+00:00"
         },
         {
             "name": "symfony/polyfill-apcu",
@@ -1967,7 +1966,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09 08:25:21"
+            "time": "2017-06-09T08:25:21+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -2026,7 +2025,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09 14:24:12"
+            "time": "2017-06-09T14:24:12+00:00"
         },
         {
             "name": "symfony/process",
@@ -2075,7 +2074,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-27 16:14:10"
+            "time": "2017-06-27T16:14:10+00:00"
         },
         {
             "name": "symfony/routing",
@@ -2149,7 +2148,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-06-19 14:02:36"
+            "time": "2017-06-19T14:02:36+00:00"
         },
         {
             "name": "symfony/security-core",
@@ -2214,7 +2213,7 @@
             ],
             "description": "Symfony Security Component - Core Library",
             "homepage": "https://symfony.com",
-            "time": "2017-07-03 07:38:34"
+            "time": "2017-07-03T07:38:34+00:00"
         },
         {
             "name": "symfony/translation",
@@ -2277,7 +2276,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-23 10:52:30"
+            "time": "2017-06-23T10:52:30+00:00"
         },
         {
             "name": "zizaco/entrust",
@@ -2342,7 +2341,7 @@
                 "laravel",
                 "roles"
             ],
-            "time": "2014-09-24 02:20:26"
+            "time": "2014-09-24T02:20:26+00:00"
         }
     ],
     "packages-dev": [
@@ -2396,7 +2395,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-05-29 06:29:14"
+            "time": "2015-05-29T06:29:14+00:00"
         },
         {
             "name": "way/generators",
@@ -2444,7 +2443,7 @@
                 }
             ],
             "description": "Rapidly generate resources, migrations, models, and much more.",
-            "time": "2014-05-27 14:21:26"
+            "time": "2014-05-27T14:21:26+00:00"
         }
     ],
     "aliases": [],
