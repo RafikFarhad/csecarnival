@@ -54,19 +54,17 @@
 
     <section class="main-content">
         <div class="container">
-            <!--
-            <div class="alert alert-info col-md-6 col-lg-offset-3" >
-                <h4 align="center">For Counter Strike Team List <a href="{{route('team.gc.cs')}}">Click here</a></h4>
-            </div>
-            -->
+            <div class="row">
+            <a  class="btn pull-right" style="margin-right: 50px; margin-bottom: 70px; size: 100px" href="{{url('/')}}/bkash">Verify Payment </a>
+        </div>
             <div class="row">
                 <div class="col-md-12">
                     <table class="table text-center table-bordered">
                         <tr>
                             <th>Serial</th>
-                            <th>Participant Photo</th>
+                            {{-- <th>Participant Photo</th> --}}
                             <th>Participant Name</th>
-                            <th>University</th>
+                            <th>Institution</th>
                             <th>Game</th>
                             <th>Status</th>
                         </tr>
@@ -74,7 +72,7 @@
                         @foreach($teams as $team)
                         <tr>
                             <td>{{$count}}</td>
-                            <td><img src="{{asset("uploads/registration/gc/$team->member_photo")}}" class="img-thumbnail img-responsive" style="width: 80px; height: 80px;"></td>
+                            {{-- <td><img src="{{asset("uploads/registration/gc/$team->member_photo")}}" class="img-thumbnail img-responsive" style="width: 80px; height: 80px;"></td> --}}
                             <td>{{$team->member_name}}</td>
                             <td>{{$team->university}}</td>
                             <td>{{$team->contest}}</td>

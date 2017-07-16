@@ -80,7 +80,7 @@ Route::get('/events',function(){
 //FARHAD
 //===================
 //EMAIL Functionality
-Route::get('/email', 'EmailController@test');
+Route::get('/email', 'EmailController@test2');
 //Gallery
 Route::get('/gallery', 'GalleryController@ab');
 //SmartTv
@@ -91,6 +91,8 @@ Route::get('/flash2', 'GalleryController@start2');
 Route::get('/schedule', 'HomeController@schedule');
 Route::get('/', 'HomeController@index');
 Route::get('/judges', 'HomeController@judge');
+Route::get('/bkash', 'HomeController@bkash');
+Route::POST('/bkash', 'HomeController@bkash_post');
 
 
 
@@ -107,7 +109,7 @@ Route::get('event/programmingContest',['as' => 'event.pc', 'uses' => 'EventContr
 Route::get('event/hackathon',['as' => 'event.sc', 'uses' => 'EventController@sc']);
 
 //project showcasing
-Route::get('event/projectshowcasing',['as' => 'event.ps', 'uses' => 'EventController@ps']);
+// Route::get('event/projectshowcasing',['as' => 'event.ps', 'uses' => 'EventController@ps']);
 //Robotics Competition
 Route::get('event/roboticscompetition',['as' => 'event.rc', 'uses' => 'EventController@rc']);
 
@@ -125,7 +127,7 @@ Route::get('team/programmingContest',['as' => 'team.pc', 'uses' => 'TeamControll
 Route::get('team/hackathon',['as' => 'team.sc', 'uses' => 'TeamController@sc']);
 
 //project showcasing
-Route::get('team/projectshowcasing',['as' => 'team.ps', 'uses' => 'TeamController@ps']);
+// Route::get('team/projectshowcasing',['as' => 'team.ps', 'uses' => 'TeamController@ps']);
 //Robotics Competition
 Route::get('team/roboticscompetition',['as' => 'team.rc', 'uses' => 'TeamController@rc']);
 
@@ -139,19 +141,19 @@ Route::get('team/gamingCompetitionCS',['as' => 'team.gc.cs', 'uses' => 'TeamCont
 
 
 
-/**Result Module */
+// /**Result Module */
 
-//programming contest
-Route::get('result/programmingContest',['as' => 'result.pc', 'uses' => 'ResultController@pc']);
+// //programming contest
+// Route::get('result/programmingContest',['as' => 'result.pc', 'uses' => 'ResultController@pc']);
 
-//software contest
-Route::get('result/hackathon',['as' => 'result.sc', 'uses' => 'ResultController@sc']);
+// //software contest
+// Route::get('result/hackathon',['as' => 'result.sc', 'uses' => 'ResultController@sc']);
 
-//project showcasing
-Route::get('result/roboticscompetition',['as' => 'result.ps', 'uses' => 'ResultController@ps']);
+// //project showcasing
+// Route::get('result/roboticscompetition',['as' => 'result.ps', 'uses' => 'ResultController@ps']);
 
-//gaming contest
-Route::get('result/gamingCompetition',['as' => 'result.gc', 'uses' => 'ResultController@gc']);
+// //gaming contest
+// Route::get('result/gamingCompetition',['as' => 'result.gc', 'uses' => 'ResultController@gc']);
 
 
 
@@ -166,12 +168,12 @@ Route::get('registration/edit',['as' => 'registration/edit', 'uses' => 'EditCont
 Route::post('registration/edit',['as' => 'registration/edit', 'uses' => 'EditController@save']);
 
 //software contest
-Route::get('registration/hackathon',['as' => 'reg.sc', 'uses' => 'ContestController@sc']);
-Route::post('registration/hackathon',['as' => 'reg.sc.store', 'uses' => 'ContestController@sc_store']);
+Route::get('registration/hackathon',['as' => 'reg.sc', 'uses' => 'ContestController@shesh']);
+// Route::post('registration/hackathon',['as' => 'reg.sc.store', 'uses' => 'ContestController@sc_store']);
 
-//project showcasing
-Route::get('registration/projectshowcasing',['as' => 'reg.ps', 'uses' => 'ContestController@ps']);
-Route::post('registration/projectshowcasing',['as' => 'reg.ps.store', 'uses' => 'ContestController@ps_store']);
+// //project showcasing
+// Route::get('registration/projectshowcasing',['as' => 'reg.ps', 'uses' => 'ContestController@ps']);
+// Route::post('registration/projectshowcasing',['as' => 'reg.ps.store', 'uses' => 'ContestController@ps_store']);
 
 //Robotics Competition
 Route::get('registration/roboticscompetition',['as' => 'reg.rc', 'uses' => 'ContestController@rc']);

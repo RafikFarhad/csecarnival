@@ -164,7 +164,7 @@ class ContestController extends \BaseController {
 
 		
 
-		'propose' => 'required|max:300',
+		'propose' => 'required|max:1500',
 		'last' => 'required',
 
 		];
@@ -495,8 +495,8 @@ class ContestController extends \BaseController {
 		'member_email'	=>	'required',
 		'member_mobile'	=>	'required',	
 		'university'    => 'required',
-		'member_photo'	=>	'required|mimes:jpg,png,jpeg',
-		'member_id_photo'	=>	'required|mimes:jpg,png,jpeg',	
+		// 'member_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member_id_photo'	=>	'required|mimes:jpg,png,jpeg',	
 		'contest'	=>	'required',	
 
 
@@ -510,20 +510,20 @@ class ContestController extends \BaseController {
 		}
 		else{
 
-			if (Input::hasFile('member_photo') && Input::hasFile('member_id_photo'))
+			//if (Input::hasFile('member_photo') && Input::hasFile('member_id_photo'))
 			{
         	  //path
-				$destinationPath = __DIR__.'/../../uploads/registration/gc';
-			///								MEMBER1
-				$member_photo = Input::file('member_photo');
-				$member_photo_fileName = '_game_member_'.md5($member_photo->getClientOriginalName()).".".$member_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member_photo_fileName;
-				Image::make($member_photo)->save($location);
+			// 	$destinationPath = __DIR__.'/../../uploads/registration/gc';
+			// ///								MEMBER1
+			// 	$member_photo = Input::file('member_photo');
+			// 	$member_photo_fileName = '_game_member_'.md5($member_photo->getClientOriginalName()).".".$member_photo->getClientOriginalExtension();
+			// 	$location = $destinationPath.'/' . $member_photo_fileName;
+			// 	Image::make($member_photo)->save($location);
 
-				$member_id_photo = Input::file('member_id_photo');
-				$member_id_photo_fileName = '_game_member_id_'.md5($member_id_photo->getClientOriginalName()).".".$member_id_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member_id_photo_fileName;
-				Image::make($member_id_photo)->save($location);
+			// 	$member_id_photo = Input::file('member_id_photo');
+			// 	$member_id_photo_fileName = '_game_member_id_'.md5($member_id_photo->getClientOriginalName()).".".$member_id_photo->getClientOriginalExtension();
+			// 	$location = $destinationPath.'/' . $member_id_photo_fileName;
+			// 	Image::make($member_id_photo)->save($location);
 
 
 				foreach ($data['contest'] as $contest) {
@@ -533,8 +533,8 @@ class ContestController extends \BaseController {
 					$reg->university= $data['university'];
 					$reg->member_email= $data['member_email'];
 					$reg->member_mobile= $data['member_mobile'];
-					$reg->member_photo= $member_photo_fileName;
-					$reg->member_id_photo= $member_id_photo_fileName;
+					// $reg->member_photo= $member_photo_fileName;
+					// $reg->member_id_photo= $member_id_photo_fileName;
 					$reg->contest=$contest;
 					$reg->status=0;
 					if($reg->save()){
@@ -547,13 +547,13 @@ class ContestController extends \BaseController {
 					return Redirect::route('team.gc')
 				->with('success', "Registration Successful");
 				else
-					return Redirect::route('reg.gc')->with('error',"Photos error, Please Try Again");
+					return Redirect::route('reg.gc')->with('error',"Error, Please Try Again");
 
 
 			}
-			else{
-				return Redirect::route('reg.gc')->with('error',"Photos error, Please Try Again");
-			}
+			// else{
+			// 	return Redirect::route('reg.gc')->with('error',"Photos error, Please Try Again");
+			// }
 
 		}
 
@@ -574,26 +574,26 @@ class ContestController extends \BaseController {
 		'member1_name'	=>	'required',
 		'member1_email'	=>	'required',
 		'member1_mobile'	=>	'required',
-		'member1_photo'	=>	'required|mimes:jpg,png,jpeg',
-		'member1_id_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member1_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member1_id_photo'	=>	'required|mimes:jpg,png,jpeg',
 
 		'member2_name'	=>	'required',
 		'member2_email'	=>	'required',
 		'member2_mobile'	=>	'required',
-		'member2_photo'	=>	'required|mimes:jpg,png,jpeg',
-		'member2_id_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member2_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member2_id_photo'	=>	'required|mimes:jpg,png,jpeg',
 
 		'member3_name'	=>	'required',
 		'member3_email'	=>	'required',
 		'member3_mobile'	=>	'required',
-		'member3_photo'	=>	'required|mimes:jpg,png,jpeg',
-		'member3_id_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member3_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member3_id_photo'	=>	'required|mimes:jpg,png,jpeg',
 
 		'member4_name'	=>	'required',
 		'member4_email'	=>	'required',
 		'member4_mobile'	=>	'required',
-		'member4_photo'	=>	'required|mimes:jpg,png,jpeg',
-		'member4_id_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member4_photo'	=>	'required|mimes:jpg,png,jpeg',
+		// 'member4_id_photo'	=>	'required|mimes:jpg,png,jpeg',
 
 		];
 		$data = Input::all();
@@ -605,57 +605,57 @@ class ContestController extends \BaseController {
 		}
 		else{
 
-			if (Input::hasFile('member1_photo') && Input::hasFile('member1_id_photo')
-				&& Input::hasFile('member2_photo') && Input::hasFile('member2_id_photo')
-				&& Input::hasFile('member3_photo') && Input::hasFile('member3_id_photo')
-				&& Input::hasFile('member4_photo') && Input::hasFile('member4_id_photo'))
+			// if (Input::hasFile('member1_photo') && Input::hasFile('member1_id_photo')
+			// 	&& Input::hasFile('member2_photo') && Input::hasFile('member2_id_photo')
+			// 	&& Input::hasFile('member3_photo') && Input::hasFile('member3_id_photo')
+			// 	&& Input::hasFile('member4_photo') && Input::hasFile('member4_id_photo'))
 			{
-				$destinationPath = __DIR__.'/../../uploads/registration/gc_cod';
+// 				$destinationPath = __DIR__.'/../../uploads/registration/gc_cod';
 
 
-				///								MEMBER1
-				$member1_photo = Input::file('member1_photo');
-				$member1_photo_fileName = $data['team_name'].'_gc_cod_member1_'.md5($member1_photo->getClientOriginalName()).".".$member1_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member1_photo_fileName;
-				Image::make($member1_photo)->save($location);
+// 				///								MEMBER1
+// 				$member1_photo = Input::file('member1_photo');
+// 				$member1_photo_fileName = $data['team_name'].'_gc_cod_member1_'.md5($member1_photo->getClientOriginalName()).".".$member1_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member1_photo_fileName;
+// 				Image::make($member1_photo)->save($location);
 
-				$member1_id_photo = Input::file('member1_id_photo');
-				$member1_id_photo_fileName = $data['team_name'].'_gc_cod_member1_id_'.md5($member1_id_photo->getClientOriginalName()).".".$member1_id_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member1_id_photo_fileName;
-				Image::make($member1_id_photo)->save($location);
+// 				$member1_id_photo = Input::file('member1_id_photo');
+// 				$member1_id_photo_fileName = $data['team_name'].'_gc_cod_member1_id_'.md5($member1_id_photo->getClientOriginalName()).".".$member1_id_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member1_id_photo_fileName;
+// 				Image::make($member1_id_photo)->save($location);
 
-///								MEMBER2
-				$member2_photo = Input::file('member2_photo');
-				$member2_photo_fileName = $data['team_name'].'_gc_cod_member2_'.md5($member2_photo->getClientOriginalName()).".".$member2_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member2_photo_fileName;
-				Image::make($member2_photo)->save($location);
+// ///								MEMBER2
+// 				$member2_photo = Input::file('member2_photo');
+// 				$member2_photo_fileName = $data['team_name'].'_gc_cod_member2_'.md5($member2_photo->getClientOriginalName()).".".$member2_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member2_photo_fileName;
+// 				Image::make($member2_photo)->save($location);
 
-				$member2_id_photo = Input::file('member2_id_photo');
-				$member2_id_photo_fileName = $data['team_name'].'_gc_cod_member2_id_'.md5($member2_id_photo->getClientOriginalName()).".".$member2_id_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member2_id_photo_fileName;
-				Image::make($member2_id_photo)->save($location);
+// 				$member2_id_photo = Input::file('member2_id_photo');
+// 				$member2_id_photo_fileName = $data['team_name'].'_gc_cod_member2_id_'.md5($member2_id_photo->getClientOriginalName()).".".$member2_id_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member2_id_photo_fileName;
+// 				Image::make($member2_id_photo)->save($location);
 
-///								MEMBER3
-				$member3_photo = Input::file('member3_photo');
-				$member3_photo_fileName = $data['team_name'].'_gc_cod_member3_'.md5($member3_photo->getClientOriginalName()).".".$member3_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member3_photo_fileName;
-				Image::make($member3_photo)->save($location);
+// ///								MEMBER3
+// 				$member3_photo = Input::file('member3_photo');
+// 				$member3_photo_fileName = $data['team_name'].'_gc_cod_member3_'.md5($member3_photo->getClientOriginalName()).".".$member3_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member3_photo_fileName;
+// 				Image::make($member3_photo)->save($location);
 
-				$member3_id_photo = Input::file('member3_id_photo');
-				$member3_id_photo_fileName = $data['team_name'].'_gc_cod_member3_id_'.md5($member3_id_photo->getClientOriginalName()).".".$member3_id_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member3_id_photo_fileName;
-				Image::make($member3_id_photo)->save($location);
+// 				$member3_id_photo = Input::file('member3_id_photo');
+// 				$member3_id_photo_fileName = $data['team_name'].'_gc_cod_member3_id_'.md5($member3_id_photo->getClientOriginalName()).".".$member3_id_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member3_id_photo_fileName;
+// 				Image::make($member3_id_photo)->save($location);
 				
-///								MEMBER4
-				$member4_photo = Input::file('member4_photo');
-				$member4_photo_fileName = $data['team_name'].'_gc_cod_member4_'.md5($member4_photo->getClientOriginalName()).".".$member4_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member4_photo_fileName;
-				Image::make($member4_photo)->save($location);
+// ///								MEMBER4
+// 				$member4_photo = Input::file('member4_photo');
+// 				$member4_photo_fileName = $data['team_name'].'_gc_cod_member4_'.md5($member4_photo->getClientOriginalName()).".".$member4_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member4_photo_fileName;
+// 				Image::make($member4_photo)->save($location);
 
-				$member4_id_photo = Input::file('member4_id_photo');
-				$member4_id_photo_fileName = $data['team_name'].'_gc_cod_member4_id_'.md5($member4_id_photo->getClientOriginalName()).".".$member4_id_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $member4_id_photo_fileName;
-				Image::make($member4_id_photo)->save($location);
+// 				$member4_id_photo = Input::file('member4_id_photo');
+// 				$member4_id_photo_fileName = $data['team_name'].'_gc_cod_member4_id_'.md5($member4_id_photo->getClientOriginalName()).".".$member4_id_photo->getClientOriginalExtension();
+// 				$location = $destinationPath.'/' . $member4_id_photo_fileName;
+// 				Image::make($member4_id_photo)->save($location);
 
 
 
@@ -666,26 +666,26 @@ class ContestController extends \BaseController {
 				$reg->member1_name= $data['member1_name'];
 				$reg->member1_email= $data['member1_email'];
 				$reg->member1_mobile= $data['member1_mobile'];
-				$reg->member1_photo= $member1_photo_fileName;
-				$reg->member1_id_photo= $member1_id_photo_fileName;
+				// $reg->member1_photo= $member1_photo_fileName;
+				// $reg->member1_id_photo= $member1_id_photo_fileName;
 
 				$reg->member2_name= $data['member2_name'];
 				$reg->member2_email= $data['member2_email'];
 				$reg->member2_mobile= $data['member2_mobile'];
-				$reg->member2_photo= $member2_photo_fileName;
-				$reg->member2_id_photo= $member2_id_photo_fileName;
+				// $reg->member2_photo= $member2_photo_fileName;
+				// $reg->member2_id_photo= $member2_id_photo_fileName;
 
 				$reg->member3_name= $data['member3_name'];
 				$reg->member3_email= $data['member3_email'];
 				$reg->member3_mobile= $data['member3_mobile'];
-				$reg->member3_photo= $member3_photo_fileName;
-				$reg->member3_id_photo= $member3_id_photo_fileName;
+				// $reg->member3_photo= $member3_photo_fileName;
+				// $reg->member3_id_photo= $member3_id_photo_fileName;
 
 				$reg->member4_name= $data['member4_name'];
 				$reg->member4_email= $data['member4_email'];
 				$reg->member4_mobile= $data['member4_mobile'];
-				$reg->member4_photo= $member4_photo_fileName;
-				$reg->member4_id_photo= $member4_id_photo_fileName;
+				// $reg->member4_photo= $member4_photo_fileName;
+				// $reg->member4_id_photo= $member4_id_photo_fileName;
 
 				$reg->status=0;
 
@@ -693,13 +693,11 @@ class ContestController extends \BaseController {
 					return Redirect::route('team.gc.cs')
 				->with('success', "Registration Successful");
 				else
-					return Redirect::route('reg.gc.cs')->with('error',"Photos error, Please Try Again");
+					return Redirect::route('reg.gc.cs')->with('error',"Error, Please Try Again");
 
 
 			}
-			else{
-				return Redirect::route('reg.gc.cs')->with('error',"Photos error, Please Try Again");
-			}
+			
 
 		}
 

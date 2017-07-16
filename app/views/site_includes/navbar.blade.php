@@ -31,9 +31,9 @@
                             <li>
                                 <a href="{{route('event.sc')}}">Hackathon</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="{{route('event.ps')}}">Project Showcasing</a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="{{route('event.rc')}}">Robotics Contest</a>
                             </li>
@@ -58,9 +58,9 @@
                             <li>
                                 <a href="{{route('team.sc')}}">Hackathon Teams</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="{{route('team.ps')}}">Project Showcasing Teams</a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="{{route('team.rc')}}">Robotics Contest Teams</a>
                             </li>
@@ -100,9 +100,9 @@
                             <li>
                                 <a href="{{route('reg.sc')}}">Hackathon</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="{{route('reg.ps')}}">Project Showcasing</a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="{{route('reg.rc')}}">Robotics Contest</a>
                             </li>
@@ -123,6 +123,12 @@
                 </ul>
 
             </div><!-- main navigation FINISH -->
+           
         </div><!-- container FINISH -->
+
     </nav><!-- yamm navbar navbar-default FINISH -->
+@if(isset($scroll))
+<a href="{{url('/')}}/sust_cse_carnival_2017_teamslots_for_programming_contest.pdf" style="text-decoration: none;"><marquee behavior="scroll" direction="left" style="padding:5px; position: relative; background-color: #fff;  opacity: .9" onmouseover="this.stop();" onmouseout="this.start();"> SUST Inter University Programming Contest 2017 Team Slot has been published. Click to download.  </marquee></a>
+@endif
+
 </div>

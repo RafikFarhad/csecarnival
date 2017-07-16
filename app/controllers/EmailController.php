@@ -28,4 +28,17 @@ class EmailController extends \BaseController {
 
 
 	}
+	public function test2(){
+
+		$res = Registration::where('contest','=', 'pc')->orderBy('status', 'ASC')->orderBy('university', 'ASC')->get();
+		$picks = Registration::distinct()->select('coach_email')->where('contest', '=', 'pc')->get();
+		foreach ($picks as $r){
+			echo $r->coach_email.", ";
+		}
+		die();
+		return $res;
+
+
+	}
+
 }

@@ -112,35 +112,9 @@ $date = explode("*", $data->dates);
                     <a href="{{route('reg.sc')}}" class="btn btn-black">Register Now</a>                </div>
                 </div>
             </div>
-
-
             <div class="event-description">
                 <div class="row">
                     <div class="col-md-6">
-                    <?php
-                    $data = DB::table('pages')->where('slug', 'ps')->first();
-
-                    $date = explode("*", $data->dates);
-                    ?>
-
-
-                        <div class="header-wrapper">
-                        <img style="height: 100px;" class="img-responsive center-block" src="{{asset('carnival_assets/banners').'/'.$data->banner}}" alt="Event Featured Image">
-                        </div> 
-
-                </div>
-
-                    <div class="col-md-6">
-                        <h3>Project Showcasing</h3>
-                        <a href="{{route('event.ps')}}" class="btn btn-black">Event Details</a>
-                        <a href="{{route('reg.ps')}}" class="btn btn-black">Register Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="event-description">
-                <div class="row">
-                    <div class="col-md-6 col-md-push-6">
                     <?php
                     $data = DB::table('pages')->where('slug', 'rc')->first();
 
@@ -154,7 +128,7 @@ $date = explode("*", $data->dates);
 
                 </div>
 
-                    <div class="col-md-6 col-md-pull-6">
+                    <div class="col-md-6 ">
                         <h3>Robotics Contest</h3>
                         <a href="{{route('event.rc')}}" class="btn btn-black">Event Details</a>
                         <a href="{{route('reg.rc')}}" class="btn btn-black">Register Now</a>
@@ -166,7 +140,7 @@ $date = explode("*", $data->dates);
             <div class="event-description">
                 <div class="row">
                     <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-md-push-6">
                     <?php
                     $data = DB::table('pages')->where('slug', 'game')->first();
 
@@ -180,7 +154,7 @@ $date = explode("*", $data->dates);
 
                 </div>
 
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 col-md-pull-6">
                         <h3>Gaming Contest</h3>
 
                         <a href="{{route('event.gc')}}" class="btn btn-black">Event Details</a>

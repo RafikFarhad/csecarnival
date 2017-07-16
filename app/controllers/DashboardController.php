@@ -36,7 +36,7 @@ class DashboardController extends \BaseController {
 	}
 	public function make_sc(){
 
-		$teams = Registration::where('contest','=', 'sc')->orderBy('university', 'ASC')->get();
+		$teams = RegistrationGamesCS::where('type', 1)->orderBy('university', 'ASC')->get();
 
 		return View::make('dashboard_sc')
 		->with('teams',$teams)
@@ -47,11 +47,12 @@ class DashboardController extends \BaseController {
 
 		$data = Input::all();
 		// return $data;
-		DB::table('registration')
+		DB::table('registration_gc_cs')
 		->where('id', $data['id'])
 		->update(array('status' => $data['status']));
-		$teams = Registration::where('contest','=', 'sc')->orderBy('university', 'ASC')->get();
-		return View::make('dashboard_sc')
+        $teams = RegistrationGamesCS::where('type', 1)->orderBy('university', 'ASC')->get();
+
+        return View::make('dashboard_sc')
 		->with('teams',$teams)
 		->with('title','Dashboard');
 
@@ -63,11 +64,48 @@ class DashboardController extends \BaseController {
 		->with('title','Dashboard');
 
 	}
-	
+
 
 	public function list_generate()
 	{
 		$gg = Input::all();
+		if($gg['type']=='sc')
+		{
+			$teams = RegistrationGamesCS::where('type','=', 1)->orderBy('university', 'ASC')->get();
+			return View::make('dashboard_list_hackathon')
+			->with('teams',$teams)
+			->with('gg', $gg)
+			->with('title', 'Generate List');
+		}
+		if($gg['type']=='rc')
+		{
+			$teams = RegistrationRC::orderBy('status', 'DES')->orderBy('id', 'ASC')->get();
+			return View::make('dashboard_list_RC')
+			->with('teams',$teams)
+			->with('gg', $gg)
+			->with('title', 'Generate List');
+		}
+		if($gg['type']=='game')
+		{
+			$teams = RegistrationGames::orderBy('contest', 'ASC')->orderBy('status', 'DES')->orderBy('id', 'ASC')->get();
+			return View::make('dashboard_list_GAME')
+			->with('teams',$teams)
+			->with('gg', $gg)
+			->with('title', 'Generate List');
+		}
+		if($gg['type']=='gamecs')
+		{
+			$teams = RegistrationGamesCS::where('type', null)->orderBy('status', 'DES')->orderBy('id', 'ASC')->get();
+			return View::make('dashboard_list_GAMECS')
+			->with('teams',$teams)
+			->with('gg', $gg)
+			->with('title', 'Generate List');
+		}
+
+
+
+
+		
 		// return $gg;
 		$teams = Registration::where('contest','=', $gg['type'])->orderBy('university', 'ASC')->get();
 
@@ -151,11 +189,11 @@ class DashboardController extends \BaseController {
 			DB::table('judge')
 			->where('id', $input['rid'])
 			->update(['rank' => $input['rank'], 
-				'name' => $input['name'],
-				'designation' => $input['designation'],
-				'company' => $input['company'],
-				'role' => $input['role'],
-				]);;
+			         'name' => $input['name'],
+			         'designation' => $input['designation'],
+			         'company' => $input['company'],
+			         'role' => $input['role'],
+			         ]);;
 		}
 		else if($input['func']=="deleteall")
 		{
@@ -198,27 +236,27 @@ class DashboardController extends \BaseController {
 
 //			               		COACH
 
-				$coach_photo = Input::file('banner');
-				$coach_photo_fileName = 'banner_'.$data[0]['slug'].".".$coach_photo->getClientOriginalExtension();
-				$location = $destinationPath.'/' . $coach_photo_fileName;
-				 Image::make($coach_photo)->save($location);
+			$coach_photo = Input::file('banner');
+			$coach_photo_fileName = 'banner_'.$data[0]['slug'].".".$coach_photo->getClientOriginalExtension();
+			$location = $destinationPath.'/' . $coach_photo_fileName;
+			Image::make($coach_photo)->save($location);
 
 
 			DB::table('pages')
 			->where('id', $input['rid'])
 			->update(
-				[ 
-				'banner' => 'banner_'.$data[0]['slug'].".".$coach_photo->getClientOriginalExtension(),
-				]);
+			         [ 
+			         'banner' => 'banner_'.$data[0]['slug'].".".$coach_photo->getClientOriginalExtension(),
+			         ]);
 			
 		}
 		DB::table('pages')
 		->where('id', $input['rid'])
 		->update(
-			['title' => $input['title'], 
-			'description' => $input['description'],
-			'dates' => $input['date0'].'*'.$input['date1'].'*'.$input['date2'].'*'.$input['date3'].'*'.$input['date4'].'*',
-			]);;
+		         ['title' => $input['title'], 
+		         'description' => $input['description'],
+		         'dates' => $input['date0'].'*'.$input['date1'].'*'.$input['date2'].'*'.$input['date3'].'*'.$input['date4'].'*',
+		         ]);;
 
 		$datas = Page::where('id', $input['rid'])->get();
 		return View::make('dashboard_pages')

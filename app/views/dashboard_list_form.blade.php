@@ -10,7 +10,11 @@
 
 {{Form::select('type', array('pc' => 'Programming Contest', 
 	'sc' => 'Hackathon',  
-	'ps' => 'Project Showcasing'), 'pc');}}
+	'rc' => 'Robotics',  
+	'game' => 'Game',
+	'gamecs' => 'Game COD',  
+
+	), 'pc');}}
 	<br><br>
 	{{-- <label>
 		{{ Form::checkbox('team_name', '1') }}

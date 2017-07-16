@@ -48,11 +48,21 @@ if($gg['type']=='ps') echo "Project Showcasing";
 
 			@if($gg['type']=='pc' && array_key_exists('coach_name', $gg))
 			<th>Coach Name</th>
+			<th>Coach Email</th>
+			<th>Coach Mobile</th>
 			@endif
 
 			@if(array_key_exists('member', $gg))
 			<th>Member</th>
 			@endif
+			@if(array_key_exists('member', $gg))
+			<th>Member Email</th>
+			@endif
+			@if(array_key_exists('member', $gg))
+			<th>Member Mobile</th>
+			@endif
+
+
 
 			@if(array_key_exists('status', $gg))
 			<th>Status</th>
@@ -77,11 +87,18 @@ if($gg['type']=='ps') echo "Project Showcasing";
 
 			@if($gg['type']=='pc' && array_key_exists('coach_name', $gg))
 			<td  >{{$team['coach_name']}}</td>
+			<td  >{{$team['coach_email']}}</td>
+			<td  >{{$team['coach_mobile']}}</td>
 			@endif
 
 			@if(array_key_exists('member', $gg))
 			<td><div>{{$team['member1_name']}}</div><div>{{$team['member2_name']}}</div><div>{{$team['member3_name']}}</div>
 			</td>
+			<td><div>{{$team['member1_email']}}</div><div>{{$team['member2_email']}}</div><div>{{$team['member3_email']}}</div>
+			</td>
+			<td><div>{{$team['member1_mobile']}}</div><div>{{$team['member2_mobile']}}</div><div>{{$team['member3_mobile']}}</div>
+			</td>
+
 			@endif
 
 			@if(array_key_exists('status', $gg))

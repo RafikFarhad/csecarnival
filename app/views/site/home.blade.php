@@ -24,6 +24,7 @@
 
             @include('site_includes.navbar')
            {{-- end of /#navigation --}}
+            
 
             <div class="heading-content text-center">
                  <div class="timer">
@@ -49,19 +50,20 @@
                             </div>
                         
 
-                        <a href="{{route('event.pc')}}" class="btn btn-registeration text-capitalize">
+                        
+                        <a href="http://csecarnival.com/event/programmingContest" class="btn btn-registeration text-capitalize">
                             Programming Contest
                         </a>
-                        <a href="{{route('event.sc')}}" class="btn btn-registeration text-capitalize">
+                        <a href="http://csecarnival.com/event/hackathon" class="btn btn-registeration text-capitalize">
                             Hackathon
                         </a>
-                        <a href="{{route('event.rc')}}" class="btn btn-registeration text-capitalize">
+                        <a href="http://csecarnival.com/event/roboticscompetition" class="btn btn-registeration text-capitalize">
                             Robotics Competition
                         </a>
-                        <a href="{{route('event.ps')}}" class="btn btn-registeration text-capitalize">
+                        {{-- <a href="http://csecarnival.com/event/projectshowcasing" class="btn btn-registeration text-capitalize">
                             Project Showcasing
-                        </a>
-                        <a href="{{route('event.gc')}}" class="btn btn-registeration text-capitalize">
+                        </a> --}}
+                        <a href="http://csecarnival.com/event/gamingCompetition" class="btn btn-registeration text-capitalize">
                             Gaming Competition
                         </a>
                     </div> {{-- end of .heading-content--}}

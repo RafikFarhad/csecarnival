@@ -5,7 +5,7 @@ class TeamController extends \BaseController {
 	//programming contest
 	public function pc(){
 
-		$teams = Registration::where('contest','=', 'pc')->orderBy('status', 'ASC')->orderBy('university', 'ASC')->get();
+		$teams = Registration::where('contest','=', 'pc')->orderBy('status', 'DES')->orderBy('university', 'ASC')->get();
 
 		return View::make('site.programming_team')
 				->with('teams',$teams)
@@ -15,7 +15,7 @@ class TeamController extends \BaseController {
 
 	//software contest
 	public function sc(){
-		$teams = RegistrationGamesCS::where('type', 1)->orderBy('id', 'ASC')->get();
+		$teams = RegistrationGamesCS::where('type', 1)->orderBy('status', 'DES')->orderBy('university', 'ASC')->get();
 
 		return View::make('site.software_team')
 				->with('teams',$teams)
@@ -25,7 +25,7 @@ class TeamController extends \BaseController {
 
 	//project showcase 
 	public function ps(){
-		$teams = Registration::where('contest','=', 'ps')->orderBy('status', 'ASC')->orderBy('university', 'ASC')->get();
+		$teams = Registration::where('contest','=', 'ps')->orderBy('status', 'DES')->orderBy('university', 'ASC')->get();
 
 		return View::make('site.project_team')
 				->with('teams',$teams)
@@ -54,7 +54,7 @@ class TeamController extends \BaseController {
 
 	//gaming cs
 	public function gc_cs(){
-		$teams = RegistrationGamesCS::orderBy('id', 'ASC')->get();
+		$teams = RegistrationGamesCS::where('type', null)->orderBy('id', 'ASC')->get();
 
 		return View::make('site.game_cs_team')
 			->with('teams',$teams)

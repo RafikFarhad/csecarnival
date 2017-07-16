@@ -40,7 +40,7 @@
     {{ HTML::style('carnival_assets/in/css/component.css') }}
     
     {{-- Top Bar Effect  --}}
-    <script>
+    {{-- <script>
         $(document).ready(function(){
             $("#top-bar").hide();
 
@@ -58,7 +58,7 @@
             
         });
     </script>
-
+ --}}
 
     <!-- remove this if you use Modernizr -->
     <script>(function(e,t,n)

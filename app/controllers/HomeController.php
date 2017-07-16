@@ -21,15 +21,18 @@ class HomeController extends BaseController {
 	}
 	public function index()
 	{
+		$events = [];
+		$dates = [];
 		$events = Time::orderBy('date', 'ASC')->orderBy('time')->get();
 		$dates = DB::table('time')
-		            ->select('date')
-		            ->groupBy('date')
-		            ->get();
-		//return $dates;
+		->select('date')
+		->groupBy('date')
+		->get();
+		// return $dates;
 		return View::make('site.home')
 					->with('events',$events)
 					->with('dates',$dates)
+					->with('scroll',true)
 					->with('title','IPvision SUST 6th CSE Carnival 2017');
 	}
 
@@ -54,6 +57,55 @@ class HomeController extends BaseController {
 					->with('datas',$datas)
 					->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Honorable Problem Setters and Judges');
 	}
+
+
+	public function bkash(){
+
+		return View::make('site.bkash')
+					->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Verify Bkash Payment');
+	}
+	public function bkash_post(){
+		$rules =[
+
+		'name'	=>	'required',
+		'trx_id'	=>	'required',
+		'contest_name'	=>	'required',	
+		'contact'    => 'required',
+		];
+
+		$data = Input::all();
+
+		$validation = Validator::make($data,$rules);
+
+		if($validation->fails()){
+			return Redirect::back()->withErrors($validation)->withInput();
+		}
+		else{
+
+
+					$reg = new Bkash();
+					$reg->name= $data['name'];
+					$reg->trx_id= $data['trx_id'];
+					$reg->contest_name= $data['contest_name'];
+					$reg->contact= $data['contact'];
+					if($reg->save()){
+						$flag_done=true;
+				if($flag_done)
+					return Redirect::back()->with('success', 'Request reached. It\'ll take less than 24 hours to update. Thanks for being with us.');
+				else
+					return Redirect::back()->with('error', 'Error!!! Please try again.');
+
+
+			}
+		}
+
+		return View::make('site.bkash')
+					->with('title','IPvision SUST 6th CSE Carnival 2017 ::. Verify Bkash Payment');
+	}
+
+
+
+
 
 
 }

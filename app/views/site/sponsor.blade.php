@@ -102,6 +102,8 @@ $data = DB::table('pages')->where('slug', 'sp')->first();
             <img style="width:300px ; margin-top: 30px"  class="img-responsive center-block" src="{{asset('carnival_assets/').'/'}}jug.png" alt="Sponsors">
             <h4 align=center style="margin-top: 30px">Online Media</h4>
             <img style="width:300px ; margin-top: 30px"  class="img-responsive center-block" src="{{asset('carnival_assets/').'/'}}bdnews.png" alt="Sponsors">
+            <h4 align=center style="margin-top: 30px">Electronic Media</h4>
+            <img style="height:150px ; margin-top: 30px"  class="img-responsive center-block" src="{{asset('carnival_assets/').'/'}}somoy.png" alt="Sponsors">
 
             </h2>
         </div>

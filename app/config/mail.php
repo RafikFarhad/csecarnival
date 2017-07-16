@@ -28,8 +28,7 @@ return array(
 	|
 	*/
 
-	// 'host' => 'mail.csecarnival.com',
-	'host' => 'smtp-relay.sendinblue.com',
+	'host' => 'smtp.gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -55,8 +54,7 @@ return array(
 	|
 	*/
 
-	// 'from' => array('address' => 'infancyit@gmail.com', 'name' => 'Monitor Delivery'),
-	'from' => array('address' => 'support@csecarnival.com', 'name' => 'CSE Carnival 2017'),
+	'from' => array('address' => 'infancyit@gmail.com', 'name' => 'Monitor Delivery'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,8 +80,7 @@ return array(
 	|
 	*/
 
-	// 'username' => 'infancyit@gmail.com',
-	'username' => 'support@csecarnival.com',
+	'username' => 'infancyit@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -96,8 +93,7 @@ return array(
 	|
 	*/
 
-	// 'password' => '!@#123!@#',
-	'password' => '14q0SPjRyHTMbUW2',
+	'password' => '!@#123!@#',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -110,8 +106,7 @@ return array(
 	|
 	*/
 
-	//'sendmail' => '/usr/sbin/sendmail -bs',
-	'sendmail' => '/usr/sbin/sendmail',
+	'sendmail' => '/usr/sbin/sendmail -bs',
 
 	/*
 	|--------------------------------------------------------------------------
