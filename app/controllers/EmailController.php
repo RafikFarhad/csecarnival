@@ -8,7 +8,7 @@ class EmailController extends \BaseController {
 	//test
 	public function test(){
 
-		$mailin = new Mailin('support@csecarnival.com', '14q0SPjRyHTMbUW2');
+		$mailin = new Mailin('support@csecarnival.com', '');
 
 		$mailin->
 		addTo('rafikfarhad@gmail.com', 'CSE Carnival')->
