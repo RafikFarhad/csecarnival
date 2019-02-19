@@ -51,19 +51,19 @@
                         
 
                         
-                        <a href="http://csecarnival.com/event/programmingContest" class="btn btn-registeration text-capitalize">
+                        <a href="/event/programmingContest" class="btn btn-registeration text-capitalize">
                             Programming Contest
                         </a>
-                        <a href="http://csecarnival.com/event/hackathon" class="btn btn-registeration text-capitalize">
+                        <a href="/event/hackathon" class="btn btn-registeration text-capitalize">
                             Hackathon
                         </a>
-                        <a href="http://csecarnival.com/event/roboticscompetition" class="btn btn-registeration text-capitalize">
+                        <a href="/event/roboticscompetition" class="btn btn-registeration text-capitalize">
                             Robotics Competition
                         </a>
-                        {{-- <a href="http://csecarnival.com/event/projectshowcasing" class="btn btn-registeration text-capitalize">
+                        {{-- <a href="/event/projectshowcasing" class="btn btn-registeration text-capitalize">
                             Project Showcasing
                         </a> --}}
-                        <a href="http://csecarnival.com/event/gamingCompetition" class="btn btn-registeration text-capitalize">
+                        <a href="/event/gamingCompetition" class="btn btn-registeration text-capitalize">
                             Gaming Competition
                         </a>
                     </div> {{-- end of .heading-content--}}

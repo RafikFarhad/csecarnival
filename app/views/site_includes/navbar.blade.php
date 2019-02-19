@@ -10,8 +10,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://csecarnival.com" style="color:white;font-size:20px">
-                <span><img style="height:45px" src="http://csecarnival.com/carnival_assets/img/logo.png"></span> SUST 6th CSE Carnival 2017
+                <a class="navbar-brand" href="" style="color:white;font-size:20px">
+                <span><img style="height:45px" src="/carnival_assets/img/logo.png"></span> SUST 6th CSE Carnival 2017
                 </a>
             </div>
 
@@ -115,7 +115,7 @@
                             </li>
                         </ul>  <!-- end of /.dropdown-menu -->
                     </li> <!-- end of /.dropdown -->
-                    <li><a href="{{url('http://csecarnival.com/sponsor')}}">Sponsors</a></li>
+                    <li><a href="{{url('/sponsor')}}">Sponsors</a></li>
                     <li>
                         <a href="{{url('/contact')}}">Contact</a>
                     </li>

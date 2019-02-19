@@ -9,7 +9,7 @@
     <meta name ="description" content="Organized By CSE Society, Department of CSE, SUST, Sylhet" />
 
     <meta property="og:title" content="{{$title}}" />
-    <meta property="og:url" content="http://csecarnival.com" />
+    <meta property="og:url" content="" />
     <meta property="og:description" content="Organized By CSE Society, Department of CSE, SUST, Sylhet" />
     <meta property="article:author" content="CSE Society, SUST" />
     <meta property="article:publisher" content="Department of CSE, SUST" />

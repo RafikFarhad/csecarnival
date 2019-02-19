@@ -12,7 +12,7 @@
     <meta name ="description" content="Organized By CSE Society, Department of CSE, SUST, Sylhet" />
 
     <meta property="og:title" content="{{$title}}" />
-    <meta property="og:url" content="http://csecarnival.com" />
+    <meta property="og:url" content="" />
     <meta property="og:description" content="Organized By CSE Society, Department of CSE, SUST, Sylhet" />
     <meta property="article:author" content="CSE Society, SUST" />
     <meta property="article:publisher" content="Department of CSE, SUST" />
@@ -56,8 +56,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://csecarnival.com" style="color:white;font-size:20px">
-                <span><img style="height:45px" src="http://csecarnival.com/carnival_assets/img/logo.png"></span> SUST 6th CSE Carnival 2017
+                <a class="navbar-brand" href="" style="color:white;font-size:20px">
+                <span><img style="height:45px" src="/carnival_assets/img/logo.png"></span> SUST 6th CSE Carnival 2017
                 </a>
             </div>
 

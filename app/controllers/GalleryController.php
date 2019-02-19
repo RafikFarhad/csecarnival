@@ -9,25 +9,24 @@ class GalleryController extends \BaseController {
         $manuals2 = [];
         $manuals3 = [];
         $manuals4 = [];
-        $filesInFolder = \File::files(__DIR__.'/../../carnival_assets/gallery/all/');
-
+        $filesInFolder = \File::files(public_path('public/carnival_assets/gallery/all/'));
         foreach($filesInFolder as $path)
         {
             $manuals1[] = pathinfo($path);
         }
-        $filesInFolder = \File::files(__DIR__.'/../../carnival_assets/gallery/programming/');
+        $filesInFolder = \File::files(__DIR__.'public/carnival_assets/gallery/programming/');
 
         foreach($filesInFolder as $path)
         {
             $manuals2[] = pathinfo($path);
         }
-        $filesInFolder = \File::files(__DIR__.'/../../carnival_assets/gallery/software/');
+        $filesInFolder = \File::files(__DIR__.'public/carnival_assets/gallery/software/');
 
         foreach($filesInFolder as $path)
         {
             $manuals3[] = pathinfo($path);
         }
-        $filesInFolder = \File::files(__DIR__.'/../../carnival_assets/gallery/game/');
+        $filesInFolder = \File::files(__DIR__.'public/carnival_assets/gallery/game/');
 
         foreach($filesInFolder as $path)
         {
@@ -46,7 +45,7 @@ class GalleryController extends \BaseController {
         $manuals2 = [];
         $manuals3 = [];
         $manuals4 = [];
-        $filesInFolder = \File::files(__DIR__.'/../../carnival_assets/gallery/flash/');
+        $filesInFolder = \File::files(__DIR__.'public/carnival_assets/gallery/flash/');
 
         foreach($filesInFolder as $path)
         {
@@ -59,7 +58,7 @@ class GalleryController extends \BaseController {
     public function start2()
     {
         $manuals1 = [];
-        $filesInFolder = \File::files(__DIR__.'/../../carnival_assets/gallery/flash/');
+        $filesInFolder = \File::files(__DIR__.'public/carnival_assets/gallery/flash/');
 
         foreach($filesInFolder as $path)
         {

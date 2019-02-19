@@ -41,20 +41,20 @@ $data = DB::table('pages')->where('slug', 'sp')->first();
                 <div class="col-md-12" style="width: 0 auto;">
                     <h2>Thanks for Supporting us
                         <small></small>
-                        <!-- <img  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsors.jpg" alt="Sponsors"> -->
+                        <!-- <img  class="img-responsive center-block" src="/uploads/sponsors.jpg" alt="Sponsors"> -->
                     </h2>
                     <h2 align=center>Title Sponsor
-                        <img style="height:180px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/ipvision.jpg" alt="Sponsors">
+                        <img style="height:180px"  class="img-responsive center-block" src="/uploads/sponsor/ipvision.jpg" alt="Sponsors">
                     </h2>
                 {{-- <h2 align=center>Supported By
-                <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/surecash.jpg" alt="Sponsors">
+                <img style="height:200px"  class="img-responsive center-block" src="/uploads/sponsor/surecash.jpg" alt="Sponsors">
             </h2> --}}
                 {{-- <h2 align=center>SIUSC Sponsor
-                <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/x10.jpg" alt="Sponsors">
+                <img style="height:200px"  class="img-responsive center-block" src="/uploads/sponsor/x10.jpg" alt="Sponsors">
             </h2> --}}
             <h3 align=center>T-Shirt Sponsor
                 <h4 align=center>SIUPC</h4>
-                <img style="height:100px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/therap.jpg" alt="Sponsors">
+                <img style="height:100px"  class="img-responsive center-block" src="/uploads/sponsor/therap.jpg" alt="Sponsors">
             </h3>
             {{-- <div class="col-md-12" style="width: 0 auto; position: center">
                 <table >
@@ -92,10 +92,10 @@ $data = DB::table('pages')->where('slug', 'sp')->first();
                 </table>
             </div> --}}
             {{-- <h2 align=center>Bag and Surprise Dinner Sponsor
-                <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/surecash.jpg" alt="Sponsors">
+                <img style="height:200px"  class="img-responsive center-block" src="/uploads/sponsor/surecash.jpg" alt="Sponsors">
             </h2>
             <h2 align=center>Sponsors
-                <img style="height:200px"  class="img-responsive center-block" src="http://csecarnival.com/uploads/sponsor/all.jpg" alt="Sponsors">
+                <img style="height:200px"  class="img-responsive center-block" src="/uploads/sponsor/all.jpg" alt="Sponsors">
             </h2> --}}
             <h2 align=center style="margin-top: 70px;">Media Partner
             <h4 align=center style="margin-top: 10px">Print Media</h4>

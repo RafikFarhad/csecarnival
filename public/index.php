@@ -18,7 +18,7 @@
 |
 */
 
-require __DIR__.'/../public_html/bootstrap/autoload.php';
+require __DIR__.'/../bootstrap/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ require __DIR__.'/../public_html/bootstrap/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../public_html/bootstrap/start.php';
+$app = require_once __DIR__.'/../bootstrap/start.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -47,8 +47,3 @@ $app = require_once __DIR__.'/../public_html/bootstrap/start.php';
 */
 
 $app->run();
-
-// CREATE USER 'admin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpass';
-// GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
-// CREATE USER 'admin'@'%' IDENTIFIED WITH mysql_native_password BY 'yourpass';
-// GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
